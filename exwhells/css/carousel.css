@@ -1,0 +1,104 @@
+
+/**
+ * =====================================
+ *
+ *
+ * 1ый слайдер
+ *
+ *========================================
+ *
+ * 
+ */
+.wrapper {
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	background:#333;
+}
+.cover-carusel .bx-wrapper {
+	background: #333;
+    display: inline-block;
+}
+ .bx-wrapper{
+    background: none;
+}
+.bx-wrapper {
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+}
+.cover-carusel li a{
+	border-radius: 2px;
+	width:114px;
+    display: inline-block;
+
+}
+.cover-carusel li a img {
+	width:110px;
+}
+.bx-controls-direction a {
+    height: 37px!important;
+    width: 19px!important;
+}
+ .bx-prev{
+	background: url("../images/arrow.png") no-repeat!important;
+    background-position: left;
+}
+.cover-carusel .bx-prev{
+	left:-35px!important;
+}
+
+ .bx-next{
+	background: url("../images/arrow2.png") no-repeat right!important;
+}
+.cover-carusel .bx-next {
+	right:-35px!important;
+}
+ .bx-prev:focus,
+ .bx-next:focus {
+	background-position: 50% 50%;
+} 
+ .bx-next:hover{
+ 	background: url("../images/arrow.png") no-repeat!important;
+ 	background-position: right!important;
+}
+ .bx-prev:hover{
+ 	background: url("../images/arrow2.png") no-repeat!important;
+ 	background-position: left;
+}
+.bx-pager {
+	display:none;
+}
+/**
+* =====================================
+*
+*
+* 2ой слайдер
+*
+*========================================
+*
+* 
+*/
+.chose-model .bx-prev{
+    left:16px!important;
+}
+.chose-model .bx-next {
+    right:16px!important;
+}
+/**
+ * =====================================
+ *
+ *
+ * 3ий слайдер
+ *
+ *========================================
+ *
+ * 
+ */
+.right-block-chose .bx-next{
+    right:16px!important;
+}
+.right-block-chose .bx-prev{
+    left:16px!important;
+}

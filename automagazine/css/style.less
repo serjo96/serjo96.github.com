@@ -1,0 +1,312 @@
+@import '/css/clear.css';
+@font-arial:500 12px Arial;
+@bold-arial:bold 53px Arial;
+.main-wrapper {
+	width: 950px;
+    margin: 0 auto;
+}
+.min-wrapper{
+    width: 820px;
+    margin: 0 auto;
+    padding-right: 10px;
+    .sub_menu{
+        margin-left: 20px;
+    }
+}
+.logo{
+    float: left;
+    margin-top: 9px;
+}
+nav{
+    position: relative;
+    ul{
+        display: inline-block;
+        li{
+            display: inline-block;
+        }
+    }
+}
+.first_menu {
+    background: url(/img/topnavbg.png) 0 0 no-repeat;
+    margin-left: 95px;
+    padding: 6px 4px;
+    background-size: cover;
+    margin-top: 30px;
+    .active{
+        border: 4px solid black;
+        background: #ffffff;
+    }
+    li{
+        border-radius: 15px;
+        font-family: Arial;
+        font-weight: 600;
+        font-size: 11px;
+        padding: 3.5px 9px;
+    }
+}
+.sub_menu {
+    margin-left: 25px;
+    li{
+        margin: 0 10px;
+        font:@font-arial;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.icons {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    a{
+        margin-left: 10px;
+    }
+}
+.contact-header {
+    float: left;
+    width: 100%;
+}
+.head-address {
+    margin-top: 20px;
+    span{    
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: bold;
+        font-size: 21px;
+    }
+    a{
+        border-bottom: 1px solid red;
+        margin-left: 10px;
+    }
+}
+.phone-number {
+	float: right;
+    position: relative;
+    span{
+        font:bold 18px Verdana;
+        display: block;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        left: -35px;
+        width: 27px;
+        height: 27px;
+        background: url(/img/phone.png);
+        background-repeat: no-repeat;
+    }
+    a{
+        border-bottom: 1px dotted red;
+        font:@font-arial;
+    }
+}
+.list-car-cover {
+    margin-top: 35px;
+    li{
+        display: inline-block;
+        margin: 0 17px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+        img{
+            display: block;
+        }
+        .list_stock{
+             font:@font-arial;
+             color: #e17838;
+             margin-left: 5px;
+         }
+    }
+}
+.list-price {
+	font:@font-arial;
+    color: red;
+    display: block;
+    text-align: center;
+}
+.name-car{
+    font: 600 14px Arial;
+}
+.forms-block {
+	float: right;
+    width: 220px;
+    height: 457px;
+    margin-top: 47px;
+}
+
+.form-btn{
+    cursor: pointer;
+    background: #e10025;
+    border-bottom: 1px solid #b90101;
+    padding: 17px 5px;
+    font: 500 11px Arial;
+    color: #fff;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.form-cont {
+    display: none;
+    -webkit-box-shadow: 0px 4px 15px 3px rgba(156,154,156,1);
+    -moz-box-shadow: 0px 4px 15px 3px rgba(156,154,156,1);
+    box-shadow: 0px 4px 15px 3px rgba(156,154,156,1);
+    padding: 0 15px;
+    padding-top: 12px;
+    span{
+        text-align: left;
+        white-space: pre-line;
+    }
+    form{
+        text-align: center;
+        margin-top: 20px;
+        input{
+            border-radius: 4px;
+            width: 195px;
+            margin-bottom: 5px;
+            padding: 3px 0 5px 5px;
+        }
+        :-ms-input-placeholder{
+                color:#666666;
+                font: 500 11px Verdana;
+            } 
+        ::-webkit-input-placeholder{
+                color:#666666;
+                font: 500 11px Verdana;
+            }
+        ::-moz-placeholder  {
+                color:#666666;
+                font: 500 11px Verdana;
+            }
+        :-moz-placeholder {
+                color:#666666;
+                font: 500 11px Verdana;
+            }
+        textarea{
+            resize: none;
+            width: 195px;
+            padding: 3px 0 5px 5px;
+            min-height: 153px
+        }
+    }
+}
+.form-open {
+    display: block;
+}
+#submit{
+    width: 190px;
+    border-radius: 15px;
+    margin: 13px 0;
+    padding: 10px 0px;
+    border: none;
+    background: #e10025;
+    font:500 14px Arial;
+    color: #fff;
+}
+.main-list-car-cover {
+	float: left;
+    width: 720px;
+    margin-top: 75px;
+}
+.main-list-car {
+    margin-bottom: 85px;
+    .cover-txt-car{
+        float: left;
+        margin: 35px 0;
+    }
+   
+    img{
+        float: left;
+        width: 370px;
+        margin-left: 60px;
+    }
+    .big_name{
+        font: bold 53px Verdana;
+        display: block;
+    }
+    .main-price{
+        display: block;
+        font: 600 21px Verdana;
+    }
+    a{
+        position: relative;
+        font: 500 14px Verdana;
+        border-bottom: 1px solid red;
+        margin-top: 10px;
+        &:before{
+            content: '';
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            background: url(/img/Layer-13.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+.two-page-list {
+    .cover-txt-car{
+        float: none;
+    }
+    .big_name {
+        font:@bold-arial;	
+    }
+    img{
+        margin-left: 0;
+        width: auto;
+    }
+}
+footer{
+    background: #282727;
+    .min-wrapper{
+        padding-right: 0;
+    }
+    .footer-menu {
+	    display: inline-block;
+        vertical-align: top;
+	    width: 90px;
+        color: #fff;
+        font: @font-arial;
+        margin-right: 75px;
+        margin-top: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+        ul{
+            margin-top: 10px;
+            a{
+                margin: 6px 0;
+                display: block;
+            }
+        }
+    }
+    .three-menu {
+	    width: 140px;
+    }
+    .soc-icons {
+	    float: right;
+        margin-top: 30px;
+        ul{
+            li{
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+    .copytight {
+        border-top: 1px solid #fff;
+        margin-top: 22px;
+	    padding: 15px 0 27px 0;
+        color: #fff;
+        font: 500 11px Verdana;
+        span{
+            float: right;
+        }
+    }
+}
