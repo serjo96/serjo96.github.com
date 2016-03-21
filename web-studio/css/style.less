@@ -554,6 +554,7 @@ nav{
     background: url(../images/trade-in-bg.png) no-repeat;
     background-size: cover;
     min-height: 675px;
+    padding-bottom: 30px;
     text-align: center;
     h3{
         padding-top: 60px;
@@ -565,19 +566,22 @@ nav{
         div{
             display: inline-block;
             vertical-align: top;
-            width: 21.283%;
+            width: 23.283%;
             position: relative;
-            &:after{
+            &:before{
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: -10px;
             }
             
             h4{
                 color: #ffffff;
                 font: 400 30px  Parangon530C;
+                text-align: left;
+                margin-left: 85px;
             }
-            p{
+            p{  
+                margin-top: 30px;
                 color: #ffffff;
                 text-align: left;
                 font: 400 18px  Arial;
@@ -586,13 +590,29 @@ nav{
         }
     }
 }
+     
     .programm-trd {
         &:before{
-            background: url(../images/programm-ico.png);
+            content: url('../images/programm-ico.png');            
             width: 69px;
             height: 48px;
         }
-    } 
+}
+        .process-trd {
+            margin: 0 40px;
+            &:before{
+                content: url('../images/process-ico.png'); 
+                width: 67px;
+                height: 67px;
+            }
+        }
+        .conditions-trd {
+            &:before{
+                content: url('../images/diamond-ico.png');  
+                width: 64px;
+                height: 49px;
+            }
+        }
 .chek-my-site {
     color: #ffffff;
     display: inline-block;
