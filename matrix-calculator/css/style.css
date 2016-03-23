@@ -1,0 +1,11 @@
+body {
+    font-family: 'kontur-iconiceco';
+    font-size: 14px;
+    line-height: 20px;
+    color: #404040;
+}
+input[type="text"] {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #d9d9d9;
+}
