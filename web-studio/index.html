@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -33,7 +31,9 @@
             </ul>
         </nav>
     <main>
-        <div class="studi-discr wrapper" id="about-us">
+        <section id="about-us">
+           
+        <div class="studi-discr wrapper" >
                <div class="discr-cover clearfix vertical">
                <div class="cover-head">
                 <span>Студия</span>
@@ -79,7 +79,11 @@
                    нашего успеха.</p>
         </div>
         </div>
-        <div class="creating-section" id="services">
+       </section>
+       
+    <section id="services">
+           
+        <div class="creating-section" >
             <span>Разработка</span>
             <div class="cover-creating wrapper">
             
@@ -109,54 +113,53 @@
             </div>
         
         </div>
-<!--section first in screach-->
+       </section>
    <div class="first-in-screach wrapper">
        <div class="screach-cover">
-       <div class="discription-sreach">
-       <span>ПЕРВЫЕ В ПОИСКЕ</span>
-       <p>Мы предлагаем услуги по SEO продвижению сайтов в ведущих поисковых системах Yandex и Google. Поисковое продвижение сайта в нашей веб-студии — это гарантированное присутствие на лидирующих позициях и привлечение необходимой аудитории.</p>
-       </div>
-<!--
-    <div class="img-screach-cover">
-  <img src="images/Google-Partner-Logo-square.png" alt="Google Partner">
-  <img src="images/yandex-sert.png" alt="Yandex sertification">
-       </div>
--->
+           <div class="discription-sreach">
+               <span>ПЕРВЫЕ В ПОИСКЕ</span>
+               <p>Мы предлагаем услуги по SEO продвижению сайтов в ведущих поисковых системах Yandex и Google. Поисковое продвижение сайта в нашей веб-студии — это гарантированное присутствие на лидирующих позициях и привлечение необходимой аудитории.</p>
+           </div>
+       
        </div>
    </div>
-    <div class="last-projects vertical" id="portfolio">
-       <span>ПОСЛЕДНИЕ ПРОЕКТЫ</span>
-    </div>
-   <div class="portfolio">
-       <div class="big-block-portfolio">
-           <div class="santeh-block">
-               <div class="hover-block"></div>
-           </div><!--                   
-        
-        --><div class="expertise-block">
-               <div class="hover-block"></div>
-           </div>
+<!--section first in screach-->
+    <section id="portfolio">
+       
+        <div class="last-projects vertical" >
+           <span>ПОСЛЕДНИЕ ПРОЕКТЫ</span>
         </div>
-           
-        <div class="mini-blocks"><!--                   
-            --><div class="in-car-block">
-                    <div class="hover-block"></div>
-               </div><!--                   
-            
-            --><div class="rkb-auto-block">
+       <div class="portfolio">
+           <div class="big-block-portfolio">
+               <div class="santeh-block">
                    <div class="hover-block"></div>
                </div><!--                   
-            
-            --><div class="vestevita-block">
-                   <div class="hover-block"></div>
-               </div><!--                   
-            
-                  --><div class="gostex-block">
+
+            --><div class="expertise-block">
                    <div class="hover-block"></div>
                </div>
-           </div>
-           <div class="more vertical"><div class="show-more">ЕЩЕ БОЛЬШЕ</div></div>
-   </div>
+            </div>
+
+            <div class="mini-blocks"><!--                   
+                --><div class="in-car-block">
+                        <div class="hover-block"></div>
+                   </div><!--                   
+
+                --><div class="rkb-auto-block">
+                       <div class="hover-block"></div>
+                   </div><!--                   
+
+                --><div class="vestevita-block">
+                       <div class="hover-block"></div>
+                   </div><!--                   
+
+                      --><div class="gostex-block">
+                       <div class="hover-block"></div>
+                   </div>
+               </div>
+               <div class="more vertical"><div class="show-more">ЕЩЕ БОЛЬШЕ</div></div>
+       </div>
+   </section>
    <div class="adaptive-section">
        <div class="wrapper">
               <div class="adaptive-section-cover">
@@ -191,28 +194,33 @@
           </div>
        </div>
    </div>
-    <div class="contact-section" id="contacts">
-       <div class="wrapper clearfix">
-          <div class="contact-section-cover">
-               <h4>СВЯЖИТЕСЬ С НАМИ</h4>
-               <p>Готовы начать работу? Отправьте сообщение и свои контакты, мы ответим вам в течении 2-ух дней. Схема работы с каждым клиентом будет разработана индивидуально  в зависимости от поставленных задач.</p>
-          </div>
-           <form  method="post" action="/php/index.php">
+    <section id="contacts">
+       
+        <div class="contact-section" >
+           <div class="wrapper clearfix">
+              <div class="contact-section-cover">
+                   <h4>СВЯЖИТЕСЬ С НАМИ</h4>
+                   <p>Готовы начать работу? Отправьте сообщение и свои контакты, мы ответим вам в течении 2-ух дней. Схема работы с каждым клиентом будет разработана индивидуально  в зависимости от поставленных задач.</p>
+              </div>
+               <form  method="post" action="/php/index.php">
 
-               <input id="name" name="name" placeholder="Ваше имя" required>
-               
-               <input id="last-name" name="name" placeholder="Ваша фамилия" required>
+                   <input id="name" name="name" placeholder="Ваше имя" required>
 
-               <input id="email" name="email" type="email" placeholder="E-mail" required>
+                   <input id="last-name" name="name" placeholder="Ваша фамилия" required>
 
-               <textarea name="message" placeholder="Введите ваше сообщение" required></textarea>
+                   <input id="email" name="email" type="email" placeholder="E-mail" required>
 
-                <span>Наши специалисты свяжутся с вами как можно скорее</span>
+                   <textarea name="message" placeholder="Введите ваше сообщение" required></textarea>
 
-               <input id="submit" name="submit" type="submit" value="ОТПРАВИТЬ" class="sumbit">
-           </form>
+                    <span>Наши специалисты свяжутся с вами как можно скорее</span>
+
+                   <input id="submit" name="submit" type="submit" value="ОТПРАВИТЬ" class="sumbit">
+               </form>
+           </div>
        </div>
-   </div>
+   </section>
     </main>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
