@@ -1,28 +1,26 @@
 body {
-  background: url(images/MergedLayers.png);
+  background: url(../images/bg.png);
 }
 
 .login_block {
   width: 423px;
   height: 713px;
-  -webkit-box-shadow: 0px 0px 13px 0.00px #000000;
-  box-shadow: 0px 0px 13px 0.00px #000000;
+  -webkit-box-shadow: 0px 0px 13px 1px #000000;
+  box-shadow: 0px 0px 13px 1px #000000;
   background: -webkit-linear-gradient(90deg, #ff8a00 0%, #ffe553 100%);
   background: linear-gradient(0deg, #ff8a00 0%, #ffe553 100%);
-  padding: 0 34px;
+  padding: 34px;
   border-radius: 30px;
   padding-top: 34px;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 0;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 59px;
+  margin-bottom: 136px;
 }
 
 .user-menu {
   padding: 15px 0;
   width: 204px;
+  margin-bottom: 34px;
 }
 
 .user-menu img {
@@ -35,14 +33,14 @@ body {
   font: 400 12px 'Trebuchet MS';
   display: block;
   text-decoration: underline;
-  margin-bottom: 2px;
+  line-height: 1;
 }
 
 .user-menu .user_setting_btn {
   color: #b4622d;
   font: 400 12px 'Trebuchet MS';
   display: inline-block;
-  vertical-align: top;
+  line-height: 1;
   text-decoration: underline;
 }
 
@@ -50,7 +48,7 @@ body {
   color: #ffffff;
   font: 400 12px 'Trebuchet MS';
   display: inline-block;
-  vertical-align: top;
+  line-height: 1;
   text-decoration: underline;
   position: relative;
 }
@@ -61,7 +59,7 @@ body {
   width: 10px;
   height: 11px;
   right: -14px;
-  top: 2px;
+  top: 1px;
 }
 
 .show-fild {
@@ -107,10 +105,10 @@ body {
 }
 
 .form-cover input {
-  border-radius: 11px;
+  border-radius: 25px;
   background: #ffffff;
   border-bottom: none;
-  padding: 7px 0px 8px 20px;
+  padding: 2px 0px 1px 20px;
   color: #cccccc;
   font: 400 25px Arial;
   display: inline-block;
@@ -149,6 +147,7 @@ body {
   color: #464646;
   font: 400 20px Arial;
   text-shadow: 0px 1px 0px #ffffff;
+  line-height: 16px;
 }
 
 .text-section span {
@@ -158,17 +157,19 @@ body {
 }
 
 .text-section p {
-  margin-top: 40px;
+  margin-top: 26px;
   color: #ffffff;
   font: 400 12px Arial;
+  line-height: 15px;
 }
 
-footer {
+.footer {
   margin-top: 64px;
   text-align: right;
   color: #ffffff;
   font: 400 12px Arial;
+  line-height: 10px;
   padding-right: 91px;
-  padding-top: 21px;
+  padding-top: 36px;
   border-top: 1px solid #ffb244;
 }
