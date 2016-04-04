@@ -505,7 +505,11 @@ nav{
         display: inline-block;
         vertical-align: top;
         position: relative;
-        min-height: 525px;
+        &:before{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
         
     }
     .santeh-block {
@@ -526,7 +530,6 @@ nav{
         display: inline-block;
         vertical-align: top;
         position: relative;
-        min-height: 343px;
         &:before{
             content: "";
             display: block;
