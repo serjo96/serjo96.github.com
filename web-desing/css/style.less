@@ -1,0 +1,120 @@
+html,body,main{
+    width: 100%;
+    height: 100%;
+}
+.main-wrapper{
+    width: 1720px;
+    margin: 0 auto;
+}
+.full_page_bg {
+	height: 1280px;
+    background: url(../images/main-bg.png);
+}
+header{
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+  padding: 77px 0;
+}
+.logo{
+  border-radius: 100%;
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: 5px solid #fff;
+}
+.nav{
+  ul{
+    padding-top: 10px;
+  }
+  li{
+    display: inline-block;
+    color: #ffffff;
+    font: 700 14px 'montserratbold';
+    margin: 0 24px;
+    transition: color 0.8s ease-in-out;
+    &:hover{
+      color: rgba(255, 255, 255, 0.44);
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.screach_and_menu_btn{
+  float: right;
+  >div{
+    display: inline-block;
+  }
+  .screach-ico {
+	width: 23px;
+    height: 23px;
+    margin-right: 19px;
+    cursor: pointer;
+    background: url(images/%EF%80%82.png);
+  }
+  .togless-menu-ico {
+	width: 34px;
+    height: 19px;
+    margin-left: 19px;
+    cursor: pointer;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    >div{
+      height: 3px;
+      background-color: #fff;
+	  width: 30px;
+      margin: 5px 0;
+      float: right;
+    }  
+  }
+}
+.main-text {
+	text-align: center;
+    margin-top: 227px;
+  h1{
+    color: #ffffff;
+    font: 400 140px 'Playfair Display';
+  }
+  p{
+    color: #ffffff;
+    font: 300 20px / 34px 'montserratlight';
+  }
+}
+.btn-rl{
+  color: #ffffff;
+  font: 700 14px 'montserratbold';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px 44px;
+  background-color: #da7074;
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  &:before{
+    content: '';
+    width: 146px;
+    height: 1px;
+    background-color: #da7074;
+    position: absolute;
+    right: 146px;
+    top:50%;
+   }
+  &:after{
+    content: '';
+    width: 146px;
+    height: 1px;
+    background-color: #da7074;
+    position: absolute;
+    left: 146px;
+    top:50%;
+  }
+}
+
+.blocks-section{
+  >div{
+    width: 20%;
+  }
+}
