@@ -1,4 +1,4 @@
-html,body,main{
+html,body{
     width: 100%;
     height: 100%;
 }
@@ -53,7 +53,7 @@ header{
     height: 23px;
     margin-right: 19px;
     cursor: pointer;
-    background: url(images/%EF%80%82.png);
+    background: url(images/magnifier.png);
   }
   .togless-menu-ico {
 	width: 34px;
@@ -74,6 +74,7 @@ header{
 .main-text {
 	text-align: center;
     margin-top: 227px;
+    position: relative;
   h1{
     color: #ffffff;
     font: 400 140px 'Playfair Display';
@@ -81,6 +82,8 @@ header{
   p{
     color: #ffffff;
     font: 300 20px / 34px 'montserratlight';
+    width: 34%;
+    margin: 0 auto;
   }
 }
 .btn-rl{
@@ -88,6 +91,8 @@ header{
   font: 700 14px 'montserratbold';
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 90px;
   padding: 14px 44px;
   background-color: #da7074;
   border-radius: 30px;
@@ -112,9 +117,156 @@ header{
     top:50%;
   }
 }
-
+.lines{
+  text-align: center;
+  position: relative;
+  margin-top: 69px;
+  .first_line {
+    width: 1px;
+    height: 190px;
+    display: inline-block;
+    margin-right: 4px;
+    background-color: #da7074;
+  }
+  .second_line {
+    width: 1px;
+    height: 190px;
+    display: inline-block;
+    position: absolute;
+    top:20px;
+    margin-top: 20px;
+    background-color: #da7074;
+  }
+}
 .blocks-section{
   >div{
-    width: 20%;
+    width: 25%;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: inline-block;
   }
+  .dolor_bkg {
+    background: url(../images/dolor-bg.png) no-repeat;	
+  }
+  .ligula_bkg {
+    background: url(../images/ligula-bg.png) no-repeat;	
+  }
+  .consectetur_bkg {
+    background: url(../images/consecte-bg.png) no-repeat;
+  }
+  .ulamcorper_bkg {
+    background: url(../images/ulamcorper-bg.png) no-repeat;	
+  }
+}
+.category_grid_box:hover .category_item_bkg{    
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+}
+.category_grid_box {
+  overflow: hidden;
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+  .category_item{
+    height: 35.625rem;
+    display: table !important;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    border-spacing: 0;
+  }
+  .category_name {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 0 20px;
+    background: rgba(0,0,0,.15);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    transition: all 600ms ease;
+    position: relative;
+    color: #ffffff;
+    font: italic 18px / 30px Georgia;
+    z-index: 2;
+    &:hover{
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      background: rgba(0,0,0,.6);
+    }
+  }
+  .category_item_bkg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-color: #f5f5f5;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    transition: all 600ms ease;
+    &:hover{
+      transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+  } 
+  .catergory_title{
+    color: #ffffff;
+    font: 600 18px / 30px 'montserratregular';
+  }
+footer{
+  .cols-cover{
+    padding: 0 98px;
+    padding-top: 112px;
+    padding-bottom: 120px;
+    >div{
+      display: inline-block;
+    }
+  }
+  h3{
+    color: #141515;
+    font: 700 14px / 26px 'montserratregular';
+  }
+  li{
+    color: #565656;
+    font: italic 14px / 26px Georgia;
+  }
+}
+.col-1 {
+  margin-right: 266px;
+}
+.col-2{
+  margin-right: 269px;
+}
+.col-3{
+  margin-right: 293px;
+}
+.col-4 {
+  width: 24%;
+  vertical-align: top;
+}
+.copyright{
+  text-align: center;
+  background: #000;
+  color: rgba(255, 255, 255, 0.2);
+  font: italic 12px / 24px Georgia;
+  padding: 42px 0;
 }
