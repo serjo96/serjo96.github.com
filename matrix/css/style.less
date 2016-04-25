@@ -1,0 +1,131 @@
+
+body{
+  font-family: 'SegoeUI-SemiBold';
+  font-size: 14px;
+  color: #404040;
+  line-height: 20px;
+}
+.left-side {
+  background-color: #bcbcbc;
+  width: 333px;
+  height: 100%;
+  float: left;
+  padding-left: 32px;
+  margin-right: 40px;
+  i{
+    margin-right: 5px;
+  }
+}
+.foc_blue{
+  background: #5199db;
+  .btn-style {
+    border: 2px solid #5199db;	
+  }
+  .rad {
+    input{
+      border: 2px solid #5199db;
+      background: #f6f6f6;
+    }
+  }
+}
+.umn {
+  margin-top: 31px;
+  position: relative;
+  padding: 13px 14px 10px 19px;
+  border: 1px solid #4aa71c;
+  border-bottom: 1px solid #37662b;
+  color: #fff;
+  background: #4aa71c;
+  cursor: pointer;
+    &:after{
+      position: absolute;
+      width: 0;
+      height: 0;
+      content: '';
+      border-style: solid;
+      border-color: rgba(255,219,76,0);
+      border-left-color: inherit;
+      -o-transform: rotate(360deg);
+      top: -1px;
+      right: -18px;
+      border-width: 19.7px 0 21px 17px;
+    }
+  &:hover{
+    background: #32800c;
+    border:1px solid #32800c;
+    border-bottom: 1px solid #426c36;
+  }
+  &:active{
+    border: 1px solid #35840e;
+    border-top: 1px solid #3d5333;
+    background: #35840e;
+  }
+}
+.change-mtrx i, .clear-mtrx i{
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+.btn-style{
+  font-family: 'SegoeUI-SemiBold';
+  font-size: 14px;
+  color: #404040;
+  line-height: 20px;
+}
+.btn_b{
+  margin-left: 20px;
+}
+
+.clear-mtrx {
+  margin-top: 55px;
+}
+.change-mtrx {
+  margin-top: 10px;
+}
+.add_mtrx {
+  margin-top: 65px;
+}
+.add_del_btns {
+  margin-top: 12px;
+}
+.add_col, .add_str, .del_col, .del_str {
+  margin: 5px;
+}
+.add_col, .add_str{
+  margin-left: 0;
+}
+.del_col, .del_str {
+  margin-right: 10px;
+}
+
+.main_table {
+	margin-top: 15px;
+    float: left;
+}
+.matrix_c {
+  position: relative;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  &:before{
+    content: '';
+    font-size: 50px;
+    position: absolute;
+    left: -2px;
+  }
+  input{
+    &:focus{
+      border:1px solid #5199db;
+    }
+  }
+}
+.str_inp{
+  input{
+    width: 38px;
+    height: 38px;
+    padding-left: 6px;
+    margin: 5px;
+    &:disabled{
+      background: #f2f2f2;
+      border:1px solid #d9d9d9;
+    }
+  }
+}
