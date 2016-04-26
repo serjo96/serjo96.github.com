@@ -97,25 +97,64 @@ body{
   margin-right: 10px;
 }
 
-.main_table {
-	margin-top: 15px;
+.main_cover {
+	margin-top: 24px;
     float: left;
 }
-.matrix_c {
+.brackets{
   position: relative;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
   &:before{
     content: '';
-    font-size: 50px;
     position: absolute;
-    left: -2px;
+    top: -6px;
+    bottom: -6px;
+    right: -7px;
+    border-right: 2px solid #222;
+    width: 10px;
+    
+    border-top: 2px solid #222;
+    border-bottom: 2px solid #222;
   }
-  input{
-    &:focus{
-      border:1px solid #5199db;
-    }
+  &:after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -7px;
+    width: 10px;
+   
+    border-top: 2px solid #222;
+    border-bottom: 2px solid #222;
+    border-left: 2px solid #222;
   }
+  
+}
+.matrix_c {
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.matrix_a {
+  display: inline-block;
+  margin-left: 25px;
+  .name_mtrx {
+    right: -40px;
+    top: 45%;
+    bottom: 50%;	
+  }
+}
+.matrix_b {
+	margin-top: 50px;
+  .name_mtrx {
+    bottom: -50px;
+    left: 45%;
+    right: 50%;
+  }
+}
+.name_mtrx {
+	font-size: 20px;
+    position: absolute;
+    
 }
 .str_inp{
   input{
@@ -123,6 +162,11 @@ body{
     height: 38px;
     padding-left: 6px;
     margin: 5px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #b2b2b2;
+    &:focus{
+      border:2px solid #5199db;
+    }
     &:disabled{
       background: #f2f2f2;
       border:1px solid #d9d9d9;
