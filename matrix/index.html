@@ -16,10 +16,14 @@
    <button class="change-mtrx btn-style"><i class="fa fa-exchange" aria-hidden="true"></i>Поменять матрицы местами</button>
    <div class="add_mtrx">
      <span class="rad btn_a">
-       <input checked="checked" name="mtrx_sel" type="radio" value="mtrx_a">Матрица А
+       <label for="matrix_a">
+         <input checked="checked" name="mtrx_sel" type="radio" value="mtrx_a">Матрица А  
+       </label>
      </span>
      <span class="rad btn_b">
-       <input type="radio" name="mtrx_sel" value="mtrx_b">Матрица В
+       <label for="matrix_b">
+         <input type="radio" name="mtrx_sel" value="mtrx_b">Матрица В
+       </label>
      </span>
      <br>
      <div class="add_del_btns">   
@@ -69,7 +73,7 @@
 
        </table>
 
-   <table class="matrix_a brackets">
+   <table class="matrix_a brackets" id="matrix_a">
          
           <tr>
            <td class="str_inp">
@@ -105,7 +109,7 @@
        
        </table>
   
-   <table class="matrix_b brackets">
+   <table class="matrix_b brackets" id="matrix_b">
         
          <tr>
           <td class="str_inp">
@@ -130,7 +134,7 @@
   </div>
   
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="js/main.js"></script>
+<!--  <script src="js/main.js"></script>-->
   <script src="js/style.js"></script>
 </body>
 </html>
