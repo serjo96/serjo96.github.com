@@ -138,25 +138,47 @@ body{
   display: inline-block;
   vertical-align: top;
   margin-left: 25px;
-  .name_mtrx {
-    right: -40px;
-    top: 45%;
-    bottom: 50%;	
+  position: relative;
+  tbody{
+    &:before{
+      content: 'A';
+      position: absolute;
+      font-size: 20px;
+      right: -40px;
+      bottom: 50%;
+      top: 45%;
+    }
   }
+//  .name_mtrx {
+//    right: -40px;
+//    top: 45%;
+//    bottom: 50%;	
+//  }
 }
 .matrix_b_cover {
-	margin-top: 50px;
-  .name_mtrx {
-    bottom: -50px;
-    left: 45%;
-    right: 50%;
+  margin-top: 50px;
+  position: relative;
+  tbody{
+    &:before{
+      content: 'B';
+      position: absolute;
+      font-size: 20px;
+      bottom: -50px;
+      left: 45%;
+      right: 50%;
+    }
   }
+//  .name_mtrx {
+//    bottom: -50px;
+//    left: 45%;
+//    right: 50%;
+//  }
 }
-.name_mtrx {
-	font-size: 20px;
-    position: absolute;
-    
-}
+//.name_mtrx {
+//	font-size: 20px;
+//    position: absolute;
+//    
+//}
 .str_inp{
   input{
     width: 38px;

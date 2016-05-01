@@ -46,5 +46,23 @@ if ($('#matrix_a tr').length > 2) {
       $('.matrix_b tr:last').remove();  
     }
   });
+}
+
+$('.add_col').click(function(){
+  if ($("#check_mtrx_a").prop("checked")){
+    $('.matrix_a tr td').clone().appendTo('.matrix_a tr'); 
+  }else if($("#check_mtrx_b").prop("checked")) {
+    $('.matrix_b tr td').clone().appendTo('.matrix_b tr'); 
+  }
+});
+
+if ($('#matrix_a tr').length > 2) {
+  $('.del_col').removeAttr("disabled").click(function(){
+    if ($("#check_mtrx_a").prop("checked")){
+      $('.matrix_a tr td:last').remove();  
+    }else if($("#check_mtrx_b").prop("checked")) {
+      $('.matrix_b tr td:last').remove();  
+    }
+  });
 } 
 
