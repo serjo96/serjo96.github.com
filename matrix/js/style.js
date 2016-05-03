@@ -1,5 +1,4 @@
-
-$('.str_inp input').focus(function () {
+$(document).on("focus", ".str_inp input", function () {
     $('.left-side').addClass('foc_blue');
   }).blur(function () {
     $('.left-side').removeClass('foc_blue');
@@ -30,6 +29,7 @@ $(document).on("click",".change-mtrx", function(){
 //    }
 //
 //});
+
 $('.add_str').click(function(){
   if ($("#check_mtrx_a").prop("checked")){
     $('.matrix_a tr:first').clone().appendTo('.matrix_a'); 
