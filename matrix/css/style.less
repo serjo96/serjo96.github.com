@@ -4,7 +4,41 @@ body{
   font-size: 14px;
   color: #404040;
   line-height: 20px;
+  button{
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-bottom: 1px solid #b2b2b2;
+    background: -moz-linear-gradient(270deg, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(100%, rgba(237,237,237,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(254,254,254,1) 0%, rgba(237,237,237,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#ededed',GradientType=0 ); /* ie6-9 */
+    &:active{
+      background: #d9d9d9;
+      border: 1px solid #cccccc;
+      border-top: 1px solid #a6a6a6;
+      -webkit-box-shadow: inset 0 2px 0px 0 rgb(209, 201, 201);
+      -moz-box-shadow: inset 0 2px 0px 0 rgb(209, 201, 201);
+      box-shadow: inset 0 2px 0px 0 rgb(209, 201, 201);
+    }
+    &:disabled{
+      border:1px solid #d9d9d9;
+      background: #f2f2f2;
+    }
+    &:hover{
+      background: -moz-linear-gradient(270deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* ff3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(242,242,242,1)), color-stop(100%, rgba(223,223,223,1))); /* safari4+,chrome */
+      background: -webkit-linear-gradient(270deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* safari5.1+,chrome10+ */
+      background: -o-linear-gradient(270deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* opera 11.10+ */
+      background: -ms-linear-gradient(270deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* ie10+ */
+      background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(223,223,223,1) 100%); /* w3c */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#dfdfdf',GradientType=0 ); /* ie6-9 */
+    }
+  }
 }
+
 .left-side {
   background-color: #bcbcbc;
   width: 333px;
@@ -59,6 +93,9 @@ body{
     border: 1px solid #35840e;
     border-top: 1px solid #3d5333;
     background: #35840e;
+    -webkit-box-shadow: inset 0 2px 0px 0 #29660b;
+    -moz-box-shadow: inset 0 2px 0px 0 #29660b;
+    box-shadow: inset 0 2px 0px 0 #29660b;
   }
 }
 .change-mtrx i, .clear-mtrx i{
@@ -89,6 +126,7 @@ body{
 }
 .add_col, .add_str, .del_col, .del_str {
   margin: 5px;
+  
 }
 .add_col, .add_str{
   margin-left: 0;
@@ -139,11 +177,6 @@ body{
   vertical-align: top;
   margin-left: 25px;
   position: relative;
-//  .name_mtrx {
-//    right: -40px;
-//    top: 45%;
-//    bottom: 50%;	
-//  }
 }
 .matrix_a {
   tbody{
@@ -172,33 +205,23 @@ body{
 .matrix_b_cover {
   margin-top: 50px;
   position: relative;
-//  .name_mtrx {
-//    bottom: -50px;
-//    left: 45%;
-//    right: 50%;
-//  }
 }
-//.name_mtrx {
-//	font-size: 20px;
-//    position: absolute;
-//    
-//}
-.str_inp{
-  width: 38px;
-  height: 38px;
-  input{
+  .str_inp{
     width: 38px;
     height: 38px;
-    padding-left: 6px;
-    margin: 5px;
-    border: 1px solid #d9d9d9;
-    border-top: 1px solid #b2b2b2;
-    &:focus{
-      border:2px solid #5199db;
-    }
-    &:disabled{
-      background: #f2f2f2;
-      border:1px solid #d9d9d9;
+    input{
+      width: 38px;
+      height: 38px;
+      padding-left: 6px;
+      margin: 5px;
+      border: 1px solid #d9d9d9;
+      border-top: 1px solid #b2b2b2;
+      &:focus{
+        border:2px solid #5199db;
+      }
+      &:disabled{
+        background: #f2f2f2;
+        border:1px solid #d9d9d9;
+      }
     }
   }
-}
