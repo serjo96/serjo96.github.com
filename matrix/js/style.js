@@ -1,13 +1,18 @@
+///////////////////////////focus funtion
 $(document).on("focus", ".str_inp input", function () {
     $('.left-side').addClass('foc_blue');
   $(".str_inp input").blur(function () {
     $('.left-side').removeClass('foc_blue');
   })
 });
+
+////////////////////////////clear matrix
   
 $(document).on("click",".clear-mtrx", function(){ 
   $(".str_inp input").val(""); 
 });
+
+////////////////////////////change matrix
 
 $(document).on("click",".change-mtrx", function(){
   if ($(this).hasClass('flipped')) {
@@ -20,59 +25,7 @@ $(document).on("click",".change-mtrx", function(){
   $(this).toggleClass('flipped');
 });
 
-
-// var addplace = function placeHold() {
-//    $('.matrix_a tr').each(function(i,v){//loop each row
-//      $(v).find('td').each(function(x,d){//loop each colon in that row
-//        $(d).find('input').attr('placeholder','a'+(i+1)+','+(x+1));//change the input placeholder
-//    })
-//  })
-//};
-//var addplaceh = function placeHold() {
-//    $('.matrix_b tr').each(function(i,v){//loop each row
-//      $(v).find('td').each(function(x,d){//loop each colon in that row
-//        $(d).find('input').attr('placeholder','b'+(i+1)+','+(x+1));//change the input placeholder
-//    })
-//  })
-//};
-//$('.add_str').click(function(){
-//  if ($("#check_mtrx_a").prop("checked")){
-//    $('.matrix_a tr:first').clone().appendTo('.matrix_a').add(addplace); 
-//  }else if($("#check_mtrx_b").prop("checked")) {
-//    $('.matrix_b tr:first').clone().appendTo('.matrix_b').add(addplaceh); 
-//  }
-//});
-//
-//if ($('.matrix_a tr td').length > 4) {
-//  $('.del_str').removeAttr("disabled").click(function(){
-//    if ($("#check_mtrx_a").prop("checked")){
-//      $('.matrix_a tr:last').remove();  
-//    }else if($("#check_mtrx_b").prop("checked")) {
-//      $('.matrix_b tr:last').remove();  
-//    }
-//  });
-//}
-//
-//$('.add_col').click(function(){
-//  if ($("#check_mtrx_a").prop("checked")){
-//    $('.matrix_a tr td:last').clone().appendTo('.matrix_a tr').add(addplace); 
-//  }else if($("#check_mtrx_b").prop("checked")) {
-//    $('.matrix_b tr td:last').clone().appendTo('.matrix_b tr').add(addplaceh); 
-//  }
-//});
-//
-//if ($('.matrix_a tr').length > 2) {
-//  $('.del_col').removeAttr("disabled").click(function(){
-//    if ($("#check_mtrx_a").prop("checked")){
-//      $('.matrix_a tr td:last-child').remove();  
-//    }else if($("#check_mtrx_b").prop("checked")) {
-//      $('.matrix_b tr td:last-child').remove();  
-//    }
-//  });
-//} 
-//
-//
-//
+////////////////////////////add functions
 
 $(function() {
 
@@ -98,7 +51,21 @@ $(function() {
     checkDelStr();
     checkDelCol();
   });
-
+  
+  var matA_str = $('.matrix_a').find ('tr').length;
+  
+  var matB_str = $('.matrix_b').find ('tr').length;
+  
+  
+  function CreateMatrix_C() {
+    if (matA_str != matB_str){
+        $('.left-side').addClass('error');
+    }
+    else{
+      $('.left-side').removeClass('error');
+    }
+    
+  }
 
   //обработка кнопок добавить
   $('.add_str').click(function() {
@@ -161,19 +128,22 @@ $(function() {
   }
 
 
-  //по аналогии с проверкой пред. кнопок сделаете дальше
    $(document).on('click', '.del_str', function() {
      matrix.find('tr:last').remove(); 
-    checkDelStr();
+     checkAddStr();
+     checkDelStr();
    });
   
   $(document).on('click', '.del_col', function() {
     matrix.find('tr td:last-child').remove(); 
+    checkAddCol();
     checkDelCol(); 
    });
     
   
-  
+  $(document).on('click', '.umn' , function (){
+    CreateMatrix_C();
+  });
 
 });
 
@@ -200,12 +170,20 @@ $(function() {
         C = [];
     if (colsA != rowsB) return false;
     for (var i = 0; i < rowsA; i++) C[i] = [];
-    for (var k = 0; k < colsB; k++)
-    { for (var i = 0; i < rowsA; i++)
-    { var t = 0;
-     for (var j = 0; j < rowsB; j++) t += A[i][j]*B[j][k];
-     C[i][k] = t;
+    for (var k = 0; k < colsB; k++){
+      for (var i = 0; i < rowsA; i++){
+        var t = 0;
+        for (var j = 0; j < rowsB; j++) t += A[i][j]*B[j][k];
+         C[i][k] = t;
+      }
     }
-    }
+    console.log(C);
     return C;
-  }
+}
+
+
+
+  
+$(document).on('click', '.umn' , function () {
+               MultiplyMatrix();
+               });
