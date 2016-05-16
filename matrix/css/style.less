@@ -43,17 +43,22 @@ body{
   background-color: #bcbcbc;
   width: 333px;
   height: 100%;
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   padding-left: 32px;
+  padding-right: 28px;
   margin-right: 40px;
   i{
     margin-right: 5px;
   }
+  >p{
+    display: none;
+  }
 }
 .error{
   background: #f6c1c0;
-  p{
-    width: 260px;
+  >p{
+    display: block;
     margin-top: 50px;
     color: #e04541;
   }
@@ -135,8 +140,9 @@ body{
 }
 
 .main_cover {
-	margin-top: 24px;
-    float: left;
+	margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
 }
 .brackets{
   position: relative;
@@ -224,3 +230,7 @@ body{
       }
     }
   }
+.main{
+  display: table;
+  height: 100%;
+}
