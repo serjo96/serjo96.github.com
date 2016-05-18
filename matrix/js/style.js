@@ -96,6 +96,7 @@ $(function() {
   function checkAddCol() {
     if ($("input[value=" + matrixID + "]").prop("checked")) {
       if (matrix.find('tr:first td').length >= 10) {
+        
         $('.add_col').prop('disabled', true);
       } else {
         $('.add_col').prop('disabled', false);
@@ -127,11 +128,11 @@ $(function() {
   }
 
   
+////////////////////////////обработчики кнопок удалить
    $(document).on('click', '.del_str', function() {
      matrix.find('tr:last').remove(); 
      checkAddStr();
      checkDelStr();
-//     remove_height();
    });
   
 
@@ -140,18 +141,34 @@ $(function() {
     checkAddCol();
     checkDelCol();
    });
-    
+   
+  
+  
+  
 
   ////////////////////////////fixes height left-block
   function add_height(){
   var hb = $('.main_cover').height();  
   var lh = $('body').height();
     if(hb >= lh){
-      $('body').height(hb+ 150);
+      $('body').height(hb+ 170);
     }
   }
   
 });
+
+
+
+/////////////placeholder from C matrix
+function placeHold_mtrx_c() {
+  $('.matrix_c tr').each(function(i,v){//loop each row
+    $(v).find('td').each(function(x,d){//loop each colon in that row
+      $(d).find('input').attr('placeholder',('.matrix_c').split('_')[1] + (i + 1) + ',' + (x + 1))//change the input placeholder
+    })
+  })
+}
+
+
 
 
  ////////////check sting and col in duo matrix
@@ -187,6 +204,8 @@ function check_cols(needsCols) {
 }
 
 
+
+
 /////////////error check
 var matA = $('.matrix_a');
 
@@ -200,6 +219,8 @@ function error(){
     $('.left-side').removeClass('error');
   }
 }
+
+
 
 
 /////////////take val in input
@@ -216,6 +237,9 @@ function readMatrixFromDom(aClassName) {
   return result;
 }
 
+
+
+
 //////////push in C matrix value
 function writeMatrixToDom(aMatrix, aClassName) {
   var rows = $('.' + aClassName).find('tr');
@@ -228,6 +252,9 @@ function writeMatrixToDom(aMatrix, aClassName) {
     }
   }
 }
+
+
+
 
 ////////////multiply
 function MultiplyMatrix(A, B) {
@@ -250,12 +277,16 @@ function MultiplyMatrix(A, B) {
   return C;
 }
 
+
+
+
+/////////////// обработчик кнопки умножения
 $(document).on('click', '.umn' , function () {
   error();
   check_matrix();
+  placeHold_mtrx_c();
   var A = readMatrixFromDom('matrix_a');
   var B = readMatrixFromDom('matrix_b');
   var C = MultiplyMatrix(A, B);
-  // проверка размерности таблицы в matrix_c на соответствие размерности C - добавить
   writeMatrixToDom(C, 'matrix_c');
 });
