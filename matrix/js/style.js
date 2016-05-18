@@ -159,7 +159,8 @@ function check_matrix() {
   var needsRows = $('.matrix_a').find('tr').length;
   var needsCols = $('.matrix_b').find('tr:first td').length;
 
-  error();
+  if (matA.find('tr:first td').length != matB.find('tr').length) {   return;  }
+  
   check_rows(needsRows);
   check_cols(needsCols);
 }
@@ -194,7 +195,6 @@ var matB = $('.matrix_b');
 function error(){
   if(matA.find('tr:first td').length != matB.find('tr').length){
     $('.left-side').addClass('error');
-    return;
   }
   else{
     $('.left-side').removeClass('error');
@@ -251,6 +251,7 @@ function MultiplyMatrix(A, B) {
 }
 
 $(document).on('click', '.umn' , function () {
+  error();
   check_matrix();
   var A = readMatrixFromDom('matrix_a');
   var B = readMatrixFromDom('matrix_b');
