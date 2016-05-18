@@ -43,6 +43,7 @@ $(function() {
     })
   };
 
+ 
 
   // начальные значения
   var matrixID = $('input[name=mtrx_sel]:checked').val();
@@ -66,26 +67,18 @@ $(function() {
     placeHold();
     checkAddStr();
     checkDelStr();
-//    add_height();
+    add_height();
   });
 
   $('.add_col').click(function() {
     matrix.find('tr td:last').clone().appendTo(matrix.find('tr'));
     placeHold();
     checkAddCol();
-    checkDelCol(); 
+    checkDelCol();
   });
 
-//function checkDelcolC(){
-//  if ($('.matrix_a').find('tr td:last-child').remove()){
-//    $('.matrix_c').find('tr td:last').remove();
-//  }
-//}
-//function checkAddcolC(){
-//  if ($('.matrix_a').find('tr td:last').clone()){
-//    $('.matrix_c').find('tr td:last').clone().appendTo('.matrix_c');
-//  }
-//}
+
+  
   
   //проверка активности кнопки доб.стр.
   function checkAddStr() {
@@ -157,57 +150,40 @@ $(function() {
       $('body').height(hb+ 150);
     }
   }
-
-//  function remove_height(){
-//    var hb = $('.main_cover').height(); 
-//    var lh = $('body').height();
-//    if (hb < lh){
-//      $('body').height(100+ '%');
-//    }
-//  } 
- 
   
 });
 
+
  ////////////check sting and col in duo matrix
-function check_matrix () {
-  var needRows = $('.matrix_a').find('tr').length;
-  var needCols = $('.matrix_b').find('tr:first td').length;
+function check_matrix() {
+  var needsRows = $('.matrix_a').find('tr').length;
+  var needsCols = $('.matrix_b').find('tr:first td').length;
 
-  var hasRows = $('.matrix_c').find('tr').length;
-  var hasCols = $('.matrix_c').find('tr:first td').length;
-//  var c_cols = $('.matrix_c').find('tr td:last').clone().appendTo('.matrix_c tr');
-
-  var message = "Info:\n";
-
-  if (needRows > hasRows)
-    message += "\n- add " + (needRows - hasRows) + " row[s]";
-  else if (needRows < hasRows)
-    message += "\n- remove " + (hasRows - needRows) + " row[s]";
-  else
-    message += "\n- rows match";
-
-  message += "\n";
-
-  if (needCols > hasCols)
-    message += "\n- add " + (needCols - hasCols) + " column[s]" ;
-  else if (needCols < hasCols)
-    message += "\n- remove " + (hasCols - needCols) + " column[s]";
-  else
-    message += "\n- columns match";
-//  
-//  function(){
-//      if(needRows > hasCols){
-//        $('.matrix_c').find('tr td:last').clone
-//      }
-//  }
-  
-  console.log(message);
-
+  error();
+  check_rows(needsRows);
+  check_cols(needsCols);
 }
 
+function check_rows(needsRows) {
+  while ($('.matrix_c').find('tr').length > needsRows) {
+    $('.matrix_c').find('tr:last').remove();
+  }
+  while ($('.matrix_c').find('tr').length < needsRows) {
+    $('.matrix_c').append('<tr></tr>');
+  }
+}
 
-
+function check_cols(needsCols) {
+  var rows = $('.matrix_c').find('tr');
+  for (var iRow = 0; iRow < rows.length; iRow++) {
+    while ($(rows[iRow]).find('td').length > needsCols) {
+      $(rows[iRow]).find('td:last').remove();
+    }
+    while ($(rows[iRow]).find('td').length < needsCols) {
+      $(rows[iRow]).append('<td class ="str_inp"  ><input disabled /></td>');
+    }
+  }
+}
 
 
 /////////////error check
@@ -218,6 +194,7 @@ var matB = $('.matrix_b');
 function error(){
   if(matA.find('tr:first td').length != matB.find('tr').length){
     $('.left-side').addClass('error');
+    return;
   }
   else{
     $('.left-side').removeClass('error');
@@ -277,7 +254,6 @@ $(document).on('click', '.umn' , function () {
   check_matrix();
   var A = readMatrixFromDom('matrix_a');
   var B = readMatrixFromDom('matrix_b');
-  error();
   var C = MultiplyMatrix(A, B);
   // проверка размерности таблицы в matrix_c на соответствие размерности C - добавить
   writeMatrixToDom(C, 'matrix_c');
