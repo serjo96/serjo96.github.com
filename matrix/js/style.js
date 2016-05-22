@@ -17,11 +17,11 @@ $(document).on("click",".clear-mtrx", function (){
 
 $(document).on("click",".change-mtrx", function(){
   if ($(this).hasClass('flipped')) {
-    $('.matrix_a').appendTo('.matrix_a_cover');
-    $(".matrix_b").appendTo(".matrix_b_cover");
+    $('.matrix_a_cover').appendTo('.matrix_a_wrapper');
+    $(".matrix_b_cover").appendTo(".matrix_b_wrapper");
   } else {
-    $('.matrix_a').appendTo('.matrix_b_cover');
-    $(".matrix_b").appendTo(".matrix_a_cover");
+    $('.matrix_a_cover').appendTo('.matrix_b_wrapper');
+    $(".matrix_b_cover").appendTo(".matrix_a_wrapper");
   }
   $(this).toggleClass('flipped');
 });

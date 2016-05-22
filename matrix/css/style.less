@@ -4,9 +4,6 @@ body{
   font-size: 14px;
   color: #404040;
   line-height: 20px;
-  button{
-    
-}
 
 .left-side {
   background-color: #bcbcbc;
@@ -32,9 +29,11 @@ body{
     color: #e04541;
   }
 }
+  
 .foc_blue{
   background: #5199db;
 }
+  
 .umn {
   margin-top: 31px;
   position: relative;
@@ -71,10 +70,12 @@ body{
     box-shadow: inset 0 2px 0px 0 #29660b;
   }
 }
+  
 .change-mtrx i, .clear-mtrx i{
   transform: rotate(-90deg);
   font-size: 12px;
 }
+  
 .btn-style{
   font-family: 'SegoeUI-SemiBold';
   font-size: 14px;
@@ -113,6 +114,7 @@ body{
     }
   }
 }
+
 .btn_b{
   margin-left: 20px;
 }
@@ -147,6 +149,7 @@ body{
 }
 .brackets{
   position: relative;
+  display: inline-block;
   &:before{
     content: '';
     position: absolute;
@@ -186,36 +189,12 @@ body{
 .matrix_a_cover {
   display: inline-block;
   vertical-align: top;
-  margin-left: 25px;
+//  margin-left: 25px;
   position: relative;
 }
-.matrix_a {
-  tbody{
-  position: relative;
-    &:before{
-      content: 'A';
-      position: absolute;
-      font-size: 20px;
-      right: -40px;
-      top: 50%;
-      margin-top: -1em;
-    }
-  }
-}
-.matrix_b {
-  tbody{
-    &:before{
-      content: 'B';
-      position: absolute;
-      font-size: 20px;
-      bottom: -50px;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
+
 .matrix_b_cover {
-  margin-top: 50px;
+//  margin-top: 50px;
   position: relative;
 }
   .str_inp{
@@ -235,4 +214,27 @@ body{
   }
 .main{
   height: 100%;
+}
+.matrix_a_wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 25px;
+}
+.matrix_b_wrapper {
+  margin-top: 50px;
+}
+.a_name{
+  position: absolute;
+  font-size: 20px;
+  right: -40px;
+  top: 50%;
+  margin-top: -1em;
+}
+.b_name{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  bottom: -50px;
+  text-align: center;
 }
