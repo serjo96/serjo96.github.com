@@ -10,18 +10,7 @@ main{
     margin: 0 auto;
 }
 header {
-	min-height: 100%;
-    width: 100%;
-    background: url(../images/head-img.png);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    .head-text {
-	    width: 56%;
-        margin: 0 auto;
-        }
+   
         h2{
             padding-top: 203px;
             display: block;
@@ -87,6 +76,18 @@ header {
             }
         }
     }
+}
+
+.head-text {
+  width: 56%;
+  margin: 0 auto;
+}
+
+.big_header{
+  background: url(../images/IMG_3644.png) no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
 }
 
 .what-we-make {
@@ -263,17 +264,26 @@ nav{
 //credo-section
 .big-section{
     min-height: 50%;
+//    height: 567px;
+    position: relative;
     width: 100%;
-    padding-top: 123px;
-    padding-bottom: 164px;
+    height: 100%;
+    background: url(../images/paralax_1.png) no-repeat;
+    background-size: cover;
     text-align: center;
-    background: url(../images/book2.png);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    span{
+    .blue_bg {
+       padding-top: 123px;
+       padding-bottom: 164px;
+      }
+      .credo_comp{
+        
+      }
+      span{
         color: #ffffff;
         font: 700 50px 'Exo 2';
         text-align: center;
@@ -462,10 +472,7 @@ nav{
     }
 }
     .last-projects {
-        background: url(../images/last-projects-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      background: #303263;
         width: 100%;
         height: 120px;
         text-align: center;
@@ -796,4 +803,27 @@ nav{
             border: none;
         }
     }
+}
+
+.blue_bg {
+  position: relative;
+  background: rgba(73, 76, 115, 0.73);
+}
+.last_poj_bg{
+  transition: all 0.5s;
+  z-index: 5;
+  height: 100%;
+  background: url(../images/last-projects-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+///////paralax
+#paralax{
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
