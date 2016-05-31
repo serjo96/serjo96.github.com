@@ -4,12 +4,24 @@ body{
 a{
   color: inherit;
   &:hover{
-  color: inherit;
-  
+    color: inherit;
+    text-decoration: none;
   }
+  &:focus{
+    color: inherit;
+    text-decoration: none;
+  }  
+}
+.no_pad{
+  padding-left: 0;
+  padding-right: 0;
+}
+.visible {
+  display: block!important;
 }
 .resirvation {
   margin-top: 32px;
+  padding-bottom: 11px;
   background: url(../images/map-dots.png) no-repeat;
   background-size: cover;
 }
@@ -26,7 +38,7 @@ a{
   display: inline-block;
 }
 .points{
-  margin-left: 80px;
+  margin-left: 11.3%;
   color: #cccccc;
   font: 400 11px Arial;
   text-transform: uppercase;
@@ -70,3 +82,219 @@ a{
   margin-top: 30px;
   padding: 0 30px;
 }
+.booking_ticket_form{
+    ::-webkit-input-placeholder { 
+      color: #8e8e8e;
+      font: 400 15px Roboto;
+    }
+    ::-moz-placeholder          { 
+      color: #8e8e8e; 
+      font: 400 15px Roboto;
+    }/* Firefox 19+ */
+    :-moz-placeholder           {
+      color: #8e8e8e; 
+      font: 400 15px Roboto;
+    }/* Firefox 18- */
+    :-ms-input-placeholder      {
+      color: #8e8e8e;  
+      font: 400 15px Roboto;
+    }
+}
+.g-input {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  input{
+    border:1px solid #cccccc;
+    
+  }
+}
+.ico_fild {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #e95d0b;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.point_field{
+  width: 70.26%;
+  margin-left: 0;
+  input{
+    padding: 11px 0 9px 10px;
+    width: 100%;
+  }
+    .ico_fild {
+      transform: rotate(90deg);
+  }
+}
+
+.when_date_fild_cover {
+    margin-bottom: 10px;  
+}
+
+.where_fild_date_cover {
+	margin-top: 10px;
+}
+.date_fild{
+  width: 21.8%;
+  margin-right:0;
+  &:before{
+    content: '\f017';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    margin-top: -9px;
+    font: normal normal normal 16px FontAwesome;
+    color: #e95d0b;
+    
+  }
+  input{
+    padding: 9px 0 11px 10px;
+    width: 100%;
+  }
+}
+.point_field, .date_fild {
+	margin: 10px;
+  &:first-child{
+    margin-top: 0;
+    margin-left: 0;
+  }
+  &:nth-child(2){
+    margin-top: 0;
+  }
+  &:nth-child(3){
+    margin-left: 0;
+  }
+}
+.submit{
+  background: linear-gradient(0deg, #2f8ac3 0%, #3eafe8 100%);
+  color: #ffffff;
+  font: 700 15px Roboto;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px 20px;
+  border: 1px solid #1096da;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.show_sked {
+	display: inline-block;
+    margin-left: 15px;
+    color: #006699;
+    font: 400 15px Roboto;
+    border-bottom: 1px dotted #99c2d6;
+}
+.passengers {
+    border:1px solid #cccccc;
+    background: #fff;
+	position: relative;
+    color: #333333;
+    font: 400 15px Roboto;
+    float: right;
+    width: 89%;
+}
+.i_pas{
+  position: absolute;
+  right: 16px;
+  top: 19px;
+  background: url(../images/arrow.png);
+  width: 7px;
+  height: 4px;
+  cursor: pointer;
+}
+.pass_select {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 11px 0 9px 10px;
+}
+.select_block {
+  display: none;
+	position: absolute;
+    right: -1px;
+    top: 50px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    padding-left: 20px;
+    padding-right: 19px;
+      .select_block&:after,
+      .select_block&:before {
+        bottom: 100%;
+        right: 10px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .select_block&:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: #fff;
+        border-width: 8px;
+        margin-right: 0px;
+      }
+      .select_block&:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-bottom-color: #d2d2d2;
+        border-width: 10px;
+        margin-right: -2px;
+      }
+}
+
+
+.onepas { 
+	margin-top: 20px;
+    white-space: nowrap;
+  >p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+.pass_calc{
+    border:1px solid #aeaeae;
+  border-radius: 1px;
+    display: inline-block;
+  >div{
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.plus{
+  padding: 5px 9.7px;
+  border-left: 1px solid #cccccc;
+  cursor: pointer;
+}
+.minus {
+  padding: 5px 12px;
+  border-right: 1px solid #cccccc;
+  cursor: pointer;
+}
+.pass_sum {
+  padding-left: 15px;
+  width: 38px;
+  height: 28px;
+  border: none;
+}
+.disc_pas {
+	margin-top: 18px;
+}
+.child, .baby{
+  .minus {
+    background: #eaeaea;
+  }
+}
+.buy_tickets {
+  background: #f9f9f9;
+  padding-left: 16.4px;
+  padding-right: 41px;
+  margin-top: 12px;
+}
+.ticket_img{
+  display: inline-block;
+}
+

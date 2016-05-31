@@ -16,25 +16,97 @@
       <header id="header" >
 
         <div class="row clearfix" >
-          <div class="col-md-8 ">
+          <div class="col-md-8">
             <div class="resiv_jd_title">Бронирование Ж/д билетов</div><!-- 
-         --><div class="points"><span class="trip">Рейс</span></div><!--
-         --><div class="points"><span class="seats">Места</span></div><!--
-         --><div class="points"><span class="passengers">Пассажиры</span></div><!--           
+         --><div class="points"><span class="trip_point">Рейс</span></div><!--
+         --><div class="points"><span class="seats_point">Места</span></div><!--
+         --><div class="points"><span class="passengers_point">Пассажиры</span></div><!--           
     --></div>
-          <div class="col-md-4">
+          <div class="col-md-4 pull-right no_pad">
             <div class="reference"><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span>Справка</span></a></div>
           </div>
         </div>
 
       </header> 
       <div class="main_screach_form">
-        <form action="#">
-          <input type="text">
-          <input type="text">
+        
+        <form action="#" class="booking_ticket_form clearfix">
+          <div class="col-md-9 no_pad"><!--
+
+        --><div class="point_field when_field_cover g-input">
+              <input type="text" class="when_field" placeholder="Откуда">
+              <span class="ico_fild"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+            </div><!--
+
+         --><div class="date_fild when_date_fild_cover g-input">
+               <input type="text" class="when_date_fild">
+              <span class="ico_fild"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+            </div><!--
+
+        --><div class="point_field where_field_cover g-input">
+               <div class="where_field">
+                <input type="text" placeholder="Куда">
+               </div>
+            </div><!--
+
+          --><div class="date_fild  where_fild_date_cover g-input">
+               <div class="where_fild_date">
+                   <input type="text" class="where_date_fild">
+                 <span class="ico_fild"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+               </div>
+             </div>
+          
+            <input type="submit" class="submit" value="Найти рейсы">
+          
+            <div class="show_sked"><a href="#">Показать расписание</a></div>
+          </div>
+          <div class="col-md-3 no_pad">
+            <div class="passengers">
+              <span class="i_pas"></span>
+              
+                <span class="pass_select">
+                     <span class="text">2 пассажира</span>
+                </span>
+              
+              <div class="select_block">
+                    
+                <div class="onepas grow">
+                 <span class="pass_calc"><!--
+                  --><div class="minus">-</div><!--
+                    --><input class="pass_sum" value="2"><!--
+                  --><div class="plus">+</div><!--
+                --></span><!--
+                  --><p>взрослых</p>
+                </div> 
+
+                <div class="onepas child">
+                 <span class="pass_calc"><!--
+                  --><div class="minus">-</div><!--
+                    --><input class="pass_sum" value="0"><!--
+                  --><div class="plus">+</div><!--
+              --></span><!--
+                --><p>детей от 5 до 10 лет</p>
+                </div>
+
+                <div class="onepas baby">
+                 <span class="pass_calc"><!--
+                  --><div class="minus">-</div><!--
+                    --><input class="pass_sum" value="0"><!--
+                  --><div class="plus">+</div><!--
+              --></span><!--
+                --><p>детей до 5 лет</p>
+                </div>
+                <div class="disc_pas">Не более 4 пассажиров на одну бронь. На одного взрослого не более одного ребенка.</div>
+                <div class="buy_tickets"><img src="images/Forma-1.png" alt="" class="ticket_img"><a href="#">Как купить несколько билетов на одного пассажира?</a></div>
+               </div>
+                
+            </div>
+          </div>
         </form>
       </div>
     </div>
  </div>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src='js/main.js'></script>
 </body>
 </html>
