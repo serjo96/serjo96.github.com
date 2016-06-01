@@ -43,8 +43,11 @@ a{
   font: 400 18px 'Roboto';
   display: inline-block;
 }
+.ponts_wrapper {
+	display: inline-block;
+}
 .points{
-  margin-left: 11.3%;
+  margin-left: 80px;
   color: #cccccc;
   font: 400 11px Arial;
   text-transform: uppercase;
@@ -200,7 +203,7 @@ a{
     color: #333333;
     font: 400 15px Roboto;
     float: right;
-    width: 88%;
+    width: 93.4%;
 }
 .i_pas{
   position: absolute;
@@ -370,14 +373,14 @@ a{
 .tabs_stat {
   padding-bottom: 10px;
   border-bottom: 1px solid #e8e8e8;
-}
-.stat_cont{
-  margin-top: 25px;
   a{
     color: #006699;
     font: 400 15px Roboto;
     border-bottom: 1px dotted #069;
   }
+}
+.stat_cont{
+  margin-top: 25px;
 .active{
   color: #e95d0b;
   font: 400 15px Roboto;
@@ -461,6 +464,9 @@ a{
 .index_wrapper {
 	margin-top: 20px;
     position: relative;
+  img{
+    width: 100%;
+  }
 }
 .line_chart {
 	height: 1px;
@@ -474,6 +480,71 @@ a{
 .svg_line {
 	
 }
+.popular_direct{
+  display: none;
+}
+.popular_dir_cont {
+  background: url(../images/min-map-dots.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  margin-top: 21px;
+  padding-top: 20px;
+  padding-bottom: 19px;
+  ul{
+    display: inline-block;
+    vertical-align: top;
+    &:first-child{
+      text-align: right;
+    }
+    &:nth-child(2){
+        margin-left: 8.54px;
+        margin-right: 9px;
+      i{
+        color: #bdbdbd;
+        margin-top: 11px;
+      }
+    }
+    &:nth-child(3){
+      text-align: left;
+    }
+  }
+}
+.city_dir {
+  margin-top: 10px;
+    a{
+      color: #333333;
+      font: 400 13.02px  Arial;
+    &:hover{  
+      color: #e95d0b;
+      i{
+        color: #bdbdbd;
+      }
+    }
+  }
+}
+
+.more_btn {
+  color: #006699;
+  font: 400 11px / 18px Arial;
+  text-align: center;
+  margin-top: 20px;
+  padding-right: 20px;
+  a{
+    border-bottom: 1px dotted #006699;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      right: -13px;
+      top: 5px;
+      display: block;
+      width: 7px;
+      height: 4px;
+      background: url(../images/arrow_bl.png);
+    }
+  }
+}
+
 .news_list {
 	margin-top: 27px;
   &:first-child{
@@ -497,4 +568,43 @@ a{
   color: #333333;
   font: 400 13px / 18px Arial;
   margin-top: 10px;
+}
+
+.graph {
+  font-size: 14px;
+  height: 50%;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.graph svg {
+  overflow: visible;
+}
+.domain {
+  display: none;
+}
+.tick {
+  shape-rendering: "crispEdges";
+  stroke: #fff;
+  stroke-width: 1px;
+}
+.graph-val {
+  text-anchor: end;
+}
+
+
+.line_index {
+  stroke:#e95d0b;
+  fill: none;
+  stroke-width: 2px;
+  vector-effect: non-scaling-stroke;
+}
+.line{
+  line{
+  stroke: #f5f5f5;
+  stroke-width: 1px;
+  }
+}
+.area {
+  vector-effect: non-scaling-stroke;
 }

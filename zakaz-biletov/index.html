@@ -1,231 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>zakaz biletov</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">  <link rel="stylesheet" href="css/clear.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/clear.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
   <div class="container">
     <div class="resirvation">
 
-      <header id="header" >
+      <header id="header">
 
-        <div class="row clearfix" >
+        <div class="row clearfix">
           <div class="col-md-8">
-            <div class="resiv_jd_title">Бронирование Ж/д билетов</div><!-- 
-         --><div class="points"><span class="trip_point">Рейс</span></div><!--
-         --><div class="points"><span class="seats_point">Места</span></div><!--
-         --><div class="points"><span class="passengers_point">Пассажиры</span></div><!--           
-    --></div>
-          <div class="col-md-4 pull-right no_pad">
+            <div class="resiv_jd_title">Бронирование Ж/д билетов</div>
+            <div class="ponts_wrapper">
+              <!-- 
+             -->
+              <div class="points"><span class="trip_point">Рейс</span></div>
+              <!--
+             -->
+              <div class="points"><span class="seats_point">Места</span></div>
+              <!--
+             -->
+              <div class="points"><span class="passengers_point">Пассажиры</span></div>
+            </div>
+            <!--           
+    -->
+          </div>
+          <div class="col-md-4">
             <div class="reference"><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span>Справка</span></a></div>
           </div>
         </div>
 
-      </header> 
+      </header>
       <div class="main_screach_form">
-        
+
         <form action="#" class="booking_ticket_form ">
           <div class="row clearfix">
-          <div class="col-md-9 no_pad">
-           <div class="fild_cover"><!--
+            <div class="col-md-9 no_pad">
+              <div class="fild_cover">
+                <!--
             
-        --><div class="point_field when_field_cover g-input">
-              <input type="text" class="when_field" placeholder="Откуда">
-              <span class="ico_fild"><i class="fa fa-exchange" aria-hidden="true"></i></span>
-            </div><!--
+        -->
+                <div class="point_field when_field_cover g-input">
+                  <input type="text" class="when_field" placeholder="Откуда">
+                  <span class="ico_fild"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+                </div>
+                <!--
 
-         --><div class="date_fild when_date_fild_cover g-input">
-               <input type="text" class="when_date_fild">
-              <span class="ico_fild"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-            </div><!--
+         -->
+                <div class="date_fild when_date_fild_cover g-input">
+                  <input type="text" class="when_date_fild">
+                  <span class="ico_fild"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                </div>
+                <!--
 
-        --><div class="point_field where_field_cover g-input">
-               <div class="where_field">
-                <input type="text" placeholder="Куда">
-               </div>
-            </div><!--
+        -->
+                <div class="point_field where_field_cover g-input">
+                  <div class="where_field">
+                    <input type="text" placeholder="Куда">
+                  </div>
+                </div>
+                <!--
 
-          --><div class="date_fild  where_fild_date_cover g-input">
-               <div class="where_fild_date">
-                   <input type="text" class="where_date_fild">
-                 <span class="ico_fild"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-               </div>
-             </div>
-          
-            <input type="submit" class="submit" value="Найти рейсы">
-          
-            <div class="show_sked"><a href="#">Показать расписание</a></div>
-          </div>
-          </div>
-          <div class="col-md-3 clearfix">
-            <div class="passengers">
-              <span class="i_pas"></span>
-              
+          -->
+                <div class="date_fild  where_fild_date_cover g-input">
+                  <div class="where_fild_date">
+                    <input type="text" class="where_date_fild">
+                    <span class="ico_fild"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+
+                <input type="submit" class="submit" value="Найти рейсы">
+
+                <div class="show_sked"><a href="#">Показать расписание</a></div>
+              </div>
+            </div>
+            <div class="col-md-3 clearfix">
+              <div class="passengers">
+                <span class="i_pas"></span>
+
                 <span class="pass_select">
                      <span class="text">2 пассажира</span>
                 </span>
-              
-              <div class="select_block">
+
+                <div class="select_block">
                   <div class="calc_sect">
-                    
+
                     <div class="onepas grow">
-                     <span class="pass_calc"><!--
+                      <span class="pass_calc"><!--
                       --><div class="minus">-</div><!--
                         --><input class="pass_sum" value="2"><!--
                       --><div class="plus">+</div><!--
-                    --></span><!--
-                      --><p>взрослых</p>
-                    </div> 
+                    --></span>
+                      <!--
+                      -->
+                      <p>взрослых</p>
+                    </div>
 
                     <div class="onepas child">
-                     <span class="pass_calc"><!--
+                      <span class="pass_calc"><!--
                       --><div class="minus disabled">-</div><!--
                         --><input class="pass_sum" value="0"><!--
                       --><div class="plus">+</div><!--
-                  --></span><!--
-                    --><p>детей от 5 до 10 лет</p>
+                  --></span>
+                      <!--
+                    -->
+                      <p>детей от 5 до 10 лет</p>
                     </div>
 
                     <div class="onepas baby">
-                     <span class="pass_calc"><!--
+                      <span class="pass_calc"><!--
                       --><div class="minus disabled">-</div><!--
                         --><input class="pass_sum" value="0"><!--
                       --><div class="plus">+</div><!--
-                  --></span><!--
-                    --><p>детей до 5 лет</p>
+                  --></span>
+                      <!--
+                    -->
+                      <p>детей до 5 лет</p>
                     </div>
                     <div class="disc_pas">Не более 4 пассажиров на одну бронь. На одного взрослого не более одного ребенка.</div>
-                 
-                   </div>
+
+                  </div>
                   <div class="buy_tickets">
-                   <div class="ticket_img">
-                    <img src="images/Forma-1.png" alt="">
-                   </div>
+                    <div class="ticket_img">
+                      <img src="images/Forma-1.png" alt="">
+                    </div>
                     <div class="how_buy_tik">
                       <a href="#"><span>Как купить несколько билетов на одного пассажира?</span></a>
                     </div>
                   </div>
-                <div class="ref_sel_bl"><a href="№">Справка</a></div>
-               </div>
-                
+                  <div class="ref_sel_bl"><a href="№">Справка</a></div>
+                </div>
+
+              </div>
             </div>
+
           </div>
-        
-        </div>
-      </form>
-    </div>
-    
-    </div>
- <div class="news_section ">
-   <div class="row clearfix">
-     <div class="col-md-3">
-       <div class="news_and_adv">
+        </form>
+      </div>
 
-        <div class="new_scr">
-           <div class="title_news">
-             <div class="title">У нас новый поиск</div>  
+    </div>
+    <div class="news_section ">
+      <div class="row clearfix">
+        <div class="col-md-3">
+          <div class="news_and_adv">
+
+            <div class="new_scr">
+              <div class="title_news">
+                <div class="title">У нас новый поиск</div>
+              </div>
+              <div class="news_cont">Он быстрее, удобнее, как и должно быть после обновления. Если будут вопросы, мы проконсультируем по телефону или онлайн.</div>
             </div>
-             <div class="news_cont">Он быстрее, удобнее, как и должно быть после обновления. Если будут вопросы, мы проконсультируем по телефону или онлайн.</div>
+
+            <div class="advice">
+              <div class="title_news">
+                <div class="title">Совет</div>
+                <!--
+               -->
+                <div class="more_adv"><i class="fa fa-refresh" aria-hidden="true"></i><a href="#">ещё</a></div>
+              </div>
+              <div class="news_cont">Нажимая в пустое поле откуда или куда, вы получите доступ к последним вашим запросам.</div>
+            </div>
+
+          </div>
+
         </div>
 
-         <div class="advice">
-             <div class="title_news">
-                 <div class="title">Совет</div><!--
-               --><div class="more_adv"><i class="fa fa-refresh" aria-hidden="true"></i><a href="#">ещё</a></div>
-             </div>
-             <div class="news_cont">Нажимая в пустое поле откуда или куда, вы получите доступ к последним вашим запросам.</div>
-         </div>
-
-       </div>
-
-     </div>
-  
-    <div class="col-md-5">
-       <div class="stat_sec">
-         <div class="title_news">
-             <div class="title">Индекс деловой активности</div>
-             <a href="#">за 90 дней</a>
-         </div>
-           <div class="stat_cont">
-                <div class="tabs_stat">
-                  <span class="price_tik_tab"><a class="active" href="#">Стоимость билета</a></span>
-                  <span class="pop_direc_tab"><a href="#">Популярные направления</a></span>
-                </div>         
+        <div class="col-md-5">
+          <div class="stat_sec">
+            <div class="title_news">
+              <div class="title">Индекс деловой активности</div>
+              <a href="#">за 90 дней</a>
+            </div>
+            <div class="stat_cont">
+              <div class="tabs_stat">
+                <span class="price_tik_tab"><a class="active" href="#">Стоимость билета</a></span>
+                <span class="pop_direc_tab"><a href="#">Популярные направления</a></span>
+              </div>
               <div class="price_ticket visible ">
-                
-                   <div class="row clearfix">
-                    <div class="col-md-4">
-                      <div class="max_price">
-                        <div class="price_title">Максимальная</div>
-                        <div class="lucs place_price">
-                          <div class="name_tick_price">Люкс</div>
-                          <div class="price_index active_index">45 604,00<i class="fa fa-long-arrow-up" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="cupe place_price">
-                          <div class="name_tick_price">Купе</div>
-                          <div class="price_index">15 236,45<i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
-                        </div>
-                        <div class="plac place_price">
-                          <div class="name_tick_price">Плацкарт</div>
-                          <div class="price_index active_index">15 236,45<i class="fa fa-long-arrow-up" aria-hidden="true"></i></div>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="col-md-7">
-                      <div class="index_chart">
-                        <div class="price_title">Средняя</div>
-                        <img src="images/index.png" alt="">
-                        <div class="index_wrapper">
-                          <div class="line_chart"></div>
-                          <div class="line_chart"></div>
-                          <div class="line_chart"></div>
-                          <div class="line_chart"></div>
-                          <div class="svg_line">
-                            
-                          </div>
+                <div class="row clearfix">
+                  <div class="col-md-4">
+                    <div class="max_price">
+                      <div class="price_title">Максимальная</div>
+                      <div class="lucs place_price">
+                        <div class="name_tick_price">Люкс</div>
+                        <div class="price_index active_index">45 604,00<i class="fa fa-long-arrow-up" aria-hidden="true"></i></div>
+                      </div>
+                      <div class="cupe place_price">
+                        <div class="name_tick_price">Купе</div>
+                        <div class="price_index">15 236,45<i class="fa fa-long-arrow-down" aria-hidden="true"></i></div>
+                      </div>
+                      <div class="plac place_price">
+                        <div class="name_tick_price">Плацкарт</div>
+                        <div class="price_index active_index">15 236,45<i class="fa fa-long-arrow-up" aria-hidden="true"></i></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <div class="index_chart">
+                      <div class="price_title">Средняя</div>
+                      <div class="index_wrapper">
+                        <img src="images/MergedLayers.png" alt="">
+                        <div class="svg_line">
+
                         </div>
                       </div>
                     </div>
+                  </div>
 
                 </div>
-             </div>
-            </div>
-       </div>    
-   </div>
- 
-   <div class="col-md-4">
-        <div class="logbook">
-          <div class="title_news">Бортовой журнал</div>
-          <div class="news_cont">
-            <div class="news_list">
-              <div class="date_news">23 ФЕВ 2016</div>
-              <div class="news_inf"><a href="#">Скидка выходного дня 20%!</a></div>
-            </div>
-             <div class="news_list">
-              <div class="date_news">18 ФЕВ 2016</div>
-              <div class="news_inf"><a href="#">Бесплатный трансфер</a></div>
-              <div class="news_discr">Бесплатный трансфер от вокзала до гостиницы либо от гостиницы до вокзала.</div>
-            </div>
-             <div class="news_list">
-              <div class="date_news">28 дек 2015</div>
-              <div class="news_inf"><a href="#">Новый год со скидкой 30%!</a></div>
-              <div class="news_discr">Встречайте Новывй год вместе с нами, ведь 31 декабря мы дарим скидку 30% на все категории номеров!</div>
+              </div>
+              <div class="popular_direct ">
+                <div class="row clearfix">
+                  <div class="col-md5">
+                    <div class="popular_dir_cont">
+                      <ul>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Комсомольк</span>
+                            
+                          </a>
+                        </li>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Астана</span>
+                            
+                          </a>
+                        </li>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Тюмень</span>
+                            
+                          </a>
+                        </li>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Челябинск</span>
+                            
+                          </a>
+                        </li>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Екатеринбург</span>
+                            
+                          </a>
+                        </li>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Омск</span>
+                            
+                          </a>
+                        </li>
+                        <li class="city_dir">
+                          <a href="#">
+                            <span class="name_city_dir">Хабаровск</span>
+                            
+                          </a>
+                        </li>
+                        
+                      </ul>
+                      <ul>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+                      </ul>
+                      <ul>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Санкт-Петербург</span></a></li>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Москва</span></a></li>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Хабаровск</span></a></li>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Екатеринбург</span></a></li>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Челябинск</span></a></li>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Красноярск</span></a></li>
+                        <li class="city_dir"><a href="#"><span class="name_city_dir">Тюмень</span></a></li>
+                        
+                      </ul>
+                      <div class="more_btn">
+                        <a href="#">ЕЩЕ 10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>   
+        </div>
+
+        <div class="col-md-4">
+          <div class="logbook">
+            <div class="title_news">
+              <div class="title">Бортовой журнал</div>
+            </div>
+            <div class="news_cont">
+              <div class="news_list">
+                <div class="date_news">23 ФЕВ 2016</div>
+                <div class="news_inf"><a href="#">Скидка выходного дня 20%!</a></div>
+              </div>
+              <div class="news_list">
+                <div class="date_news">18 ФЕВ 2016</div>
+                <div class="news_inf"><a href="#">Бесплатный трансфер</a></div>
+                <div class="news_discr">Бесплатный трансфер от вокзала до гостиницы либо от гостиницы до вокзала.</div>
+              </div>
+              <div class="news_list">
+                <div class="date_news">28 дек 2015</div>
+                <div class="news_inf"><a href="#">Новый год со скидкой 30%!</a></div>
+                <div class="news_discr">Встречайте Новывй год вместе с нами, ведь 31 декабря мы дарим скидку 30% на все категории номеров!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
- </div>
-    </div>
- </div>
+  </div>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
- <script src='js/main.js'></script>
+  <script src='js/main.js'></script>
 </body>
+
 </html>
