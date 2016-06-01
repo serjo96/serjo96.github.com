@@ -3,6 +3,7 @@ body{
 }
 a{
   color: inherit;
+  line-height: 1;
   &:hover{
     color: inherit;
     text-decoration: none;
@@ -16,12 +17,12 @@ a{
 	padding-left: 0;
     padding-right: 0;
 }
-.no_pad{
-  padding-left: 0;
-  padding-right: 0;
-}
+
 .visible {
   display: block!important;
+}
+.invisible{
+  display: none!important;
 }
 .resirvation {
   margin-top: 32px;
@@ -217,7 +218,8 @@ a{
     padding: 11px 0 9px 10px;
 }
 .select_block {
-  display: none;
+    display: none;
+    z-index: 5;
 	position: absolute;
     right: -1px;
     top: 50px;
@@ -322,9 +324,7 @@ a{
 .news_section {
 	margin-top: 40px;
 }
-.news_and_adv {
-  width: 97.15%;
-}
+
 .title_news{
     padding-bottom: 20px;
     border-bottom: 2px solid #e8e8e8;
@@ -354,4 +354,120 @@ a{
     color: #006699;
     font: 400 13px  Roboto;
  
+}
+
+.tabs_stat {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.stat_cont{
+  margin-top: 25px;
+  a{
+    color: #006699;
+    font: 400 15px Roboto;
+    border-bottom: 1px dotted #069;
+  }
+.active{
+  color: #e95d0b;
+  font: 400 15px Roboto;
+  position: relative;
+  border-bottom: none;
+  &:before{
+      height: 1px;
+      display: block;
+      background: #e95d0b;
+      position: absolute;
+      bottom: -11px;
+    }
+  }
+}
+.price_tik_tab {
+    margin-right: 10px;
+	.active {
+      &:before{
+        content: '';
+        width: 129px;
+      }
+  }
+}
+.pop_direc_tab {
+  margin-left: 10px;
+	.active {
+      &:before{
+        content: '';
+        width: 184px;
+        left: 0;
+      }
+  }
+}
+.price_ticket {
+	display: none;
+  .col-md-6{
+    padding-right: 0;
+  }
+}
+.max_price {
+    margin-top: 30px;
+}
+.price_title {
+  color: #303030;
+  font: 700 13px / 18px Arial;
+}
+.place_price {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 8px;
+  text-align: right;
+}
+.name_tick_price{
+  text-align: left;
+  color: #646464;
+  font: 400 13px / 18px Arial;
+}
+.lucs {
+	margin-top: 27px;
+}
+.price_index {
+  display: inline-block;
+  color: #646464;
+  font: 400 15.12px / 18px Roboto;
+  margin-top: 10px;
+  padding-right: 11px;
+  i{
+    margin-left: 10px;
+    font-size: 15px;
+  }
+    &:first-child{
+      margin-top: 0;
+    }
+}
+.active_index {
+  color: #e95d0b;
+  font: 400 15px / 18px Roboto;
+}
+.index_chart {
+	margin-top: 30px; 
+}
+.news_list {
+	margin-top: 27px;
+  &:first-child{
+    margin-top: 20px;
+  }
+}
+.date_news{
+  color: #8e8e8e;
+  font: 400 11px / 18px Arial;
+}
+.news_inf {
+  margin-top: 10px;
+  color: #006699;
+  font: 400 14px  Roboto;
+  line-height: 1;
+  a{
+    text-decoration: underline;
+  }
+}
+.news_discr {
+  color: #333333;
+  font: 400 13px / 18px Arial;
+  margin-top: 10px;
 }
