@@ -44,36 +44,50 @@ a{
   display: inline-block;
   text-transform: uppercase;
 }
-.ponts_wrapper {
+.points_wrapper {
 	display: inline-block;
+    vertical-align: top;
 }
 .points{
-  margin-left: 80px;
+  margin-left: 50px;
   color: #cccccc;
   font: 400 11px Arial;
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+  }
     &:before{
       content: '';
       position: absolute;
-      left:-68px;
+      left:-40px;
       top: 50%;
       width: 29px;
       height: 1px;
       border-top: 1px dotted #cccccc;
     }
-  &:after{
-    content: '';
-    position: absolute;
-    left:-28px;
-    top: -4px;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #ccc;
-    border-radius: 100%;
-  }
 }
+.circle {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #ccc;
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 9px;
+      position: relative;
+}
+.cheked_circle{
+      border: none;
+  background: url(../images/checked.png);
+  }
+.down_circle{
+    border: none;
+    background: url(../images/down.png);
+}
+
 .reference{
   color: #006699;
   font: 400 13px Roboto;
@@ -482,7 +496,66 @@ a{
   }
 }
 .svg_line {
-	
+	position: relative;
+}
+circle{
+  cursor: pointer;
+}
+#hov_trig:hover  .hover_block{
+  display: block;
+}
+.bg_line{
+  path{
+    stroke:#f5f5f5;
+    stroke-width:2px;
+    stroke-dashoffset:0;
+    stroke-dasharray: none;
+  }
+}
+.hover_block {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 96px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  padding-bottom:5px;
+  padding-top: 5px;
+  padding-left: 9px;
+  padding-right: 10px;
+  .date_hover{
+  font: 600 13px / 18px Roboto;
+    color: #333333;
+    margin-right: 4px;
+  }
+  .index_hover{
+  font: 400 13px / 18px Roboto;
+    color: #e95d0b;
+    margin-left: 3px;
+  }
+}
+.hover_block:after,
+.hover_block:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.hover_block:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #fff;
+  border-width: 7px;
+  margin-top: -7px;
+}
+.hover_block:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: #d3d3d3;
+  border-width: 8px;
+  margin-top: -8px;
 }
 .popular_direct{
   display: none;
@@ -574,41 +647,3 @@ a{
   margin-top: 10px;
 }
 
-.graph {
-  font-size: 14px;
-  height: 50%;
-  margin-bottom: 16px;
-  width: 100%;
-}
-
-.graph svg {
-  overflow: visible;
-}
-.domain {
-  display: none;
-}
-.tick {
-  shape-rendering: "crispEdges";
-  stroke: #fff;
-  stroke-width: 1px;
-}
-.graph-val {
-  text-anchor: end;
-}
-
-
-.line_index {
-  stroke:#e95d0b;
-  fill: none;
-  stroke-width: 2px;
-  vector-effect: non-scaling-stroke;
-}
-.line{
-  line{
-  stroke: #f5f5f5;
-  stroke-width: 1px;
-  }
-}
-.area {
-  vector-effect: non-scaling-stroke;
-}
