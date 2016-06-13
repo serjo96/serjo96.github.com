@@ -319,20 +319,19 @@ nav{
     >span{
     color: #ffffff;
     font: 400 50px Parangon530C;
-    width: 32%;
-    margin-top: 130px;
+    top: 130px;
     text-align: center;
     display: block;
     position: absolute;
+    left: 145px;
     z-index: 15;
     }
     .cover-creating {
         
-        margin: 0 auto;
+        padding: 0 15px;
         padding-top: 206px;
 //3 inline block
     >div{
-        margin: 0 6px;
         z-index: 30;
         display: inline-block;
         width: 32.316%;
@@ -340,7 +339,11 @@ nav{
         color: #ffffff;
         font: 700 50.55px Futura-Book;
         position: relative;
-        min-height: 315px;
+      &:after{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
         
         a{
             position: absolute;
@@ -396,6 +399,8 @@ nav{
                     background-repeat: no-repeat;
                     background-size: cover;
                     font: 700 50.54px 'Exo 2';
+                    margin: 0 18px;
+
                             a{
                                 color:#ffcb00;
                                 font-size:20px;
@@ -494,6 +499,9 @@ nav{
         }
     }
 .portfolio {
+  .text_hover{
+    display: inline-block;
+  }
     .hover-block {
         height: 100%;
         width: 100%;
@@ -502,16 +510,14 @@ nav{
         top:0;
         text-align: center;
         opacity: 0;
-        padding-top: 15%;
-        transition: all 1s ease;;
+        transition: all 1s ease;
+        font: 600 2vw 'Exo 2';
         h4{
             color: #ffffff;
-            font: 600 72px / 30px 'Exo 2';
             margin-bottom: 25px;
         }
         span{
             color: #ffffff;
-            font: 600 72px / 70px 'Exo 2';
         }
         &:hover{
            background: rgba(246, 174, 72, 0.74);
@@ -520,14 +526,16 @@ nav{
     }
 }
 .big-block-portfolio {
-  height: 530px;
     >div{
         display: inline-block;
         vertical-align: top;
         position: relative;
         width: 50%;
-        height: 100%;
-        
+      &:after{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
     }
     .santeh-block {
         background: url(../images/sa.png);
@@ -541,33 +549,34 @@ nav{
     }
 }
 .mini-blocks {
-  height: 410px;
     >div{
         display: inline-block;
         vertical-align: top;
         position: relative;
         height: 100%;
+        width: 25%;
+      &:after{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
     }
     .in-car-block{
         background: url(../images/asc.png) no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 24.30093209054594%;
     }
     .rkb-auto-block {
         background: url(../images/logo2.png)no-repeat;
         background-size: cover;
-        width: 24.56724367509987%;
     }
     .vestevita-block {
         background: url(../images/geV2-1EUZhg.png);
         background-size: cover;
-        width: 24.76697736351531%;
     }
     .gostex-block {
         background: url(../images/Realistic-iMac-Mockup1.png);
         background-size: cover;
-        width: 26.367%;
     }
 }
 .more {
