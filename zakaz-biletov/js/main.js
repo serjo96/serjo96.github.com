@@ -36,3 +36,5 @@ $('#hov_trig').mouseout (function hide_sidebar(){
   
   hiden_block.style.display="none";
 });
+
+
