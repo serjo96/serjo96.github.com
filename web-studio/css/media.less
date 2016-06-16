@@ -1,21 +1,21 @@
-@media screen and (min-width: 768px){
+@media screen and (max-width: 1245px){
+  .wrapper {
+    width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .wrapper{
+    width: 970px;
+  }
+}
+@media screen and (max-width: 768px){
     .wrapper{
       width: 750px;
     } 
 }
 
-@media screen and (min-width: 992px){
-  .wrapper{
-    width: 970px;
-  }
-}
 
 
-@media screen and (min-width: 1245px){
-  .wrapper {
-    width: 1245px;
-  }
-}
 
 
 
@@ -37,6 +37,12 @@
       font-size: 40px;
     }
   }
+  .adaptive-section .adaptive_cont{
+      width: 100%;
+  }
+  .adaptiv_cont_img {
+      width: 100%;	
+  }
 }
 
 @media screen and (max-width: 1024px){
@@ -55,14 +61,29 @@
   .what-we-make {
     text-align: center;
     margin-top: 40px;
+    >div{
+      width: 100%;
+    }
   }
   .studi-discr .cover-big-txt{
     text-align: left;
-    width: 110%;
+    width: 100%;
   }
   .studi-discr .cover-head{
     margin-bottom: 10px;
   }
+  .first-in-screach .discription-sreach{
+    width: 100%;
+  }
+  .ad_img {
+	margin: 0 auto;
+    img{
+      display: inline-block;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+}
   .creating-section {
     background-size: 100% 100%;
     .cover-creating{
@@ -70,6 +91,7 @@
       >div{
         .create-block-name {
           width: 85%;
+          margin-top: 15px;
         }
         .magazine-block-name{
           width: 90%;
@@ -77,7 +99,10 @@
         .web-site-name {
           width: 86%;
         }
-      } 
+      }
+      a{
+        right: 25px;
+      }
       
       .bl_shop, .bl_lading, .bl_web_site{
         font-size: 30px
@@ -91,7 +116,9 @@
       font-size: 15px;
     }
   }
-
+  .trade-in-section .trade-in-blocks div{
+    width: 100%;
+  }
 }
 
 //@media screen and (max-width: 768px){

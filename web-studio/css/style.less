@@ -7,6 +7,7 @@ main{
 }
 .wrapper{
     margin: 0 auto;
+    width: 1245px;
 }
 .header_discr{
   padding-top: 203px;
@@ -82,6 +83,15 @@ header {
 .head-text {
   width: 56%;
   margin: 0 auto;
+}
+
+
+.disc_sect{
+  display: block;
+  text-align: left;
+  width: 100%;
+  color: #060606;
+  font: 400 36px Parangon530C;
 }
 
 .big_header{
@@ -441,21 +451,31 @@ nav{
     border:3px solid #66bf0d;
 }
 //first in screach
+.ad_img {
+	float: left;
+    margin-left: 205px;
+  img{
+    display: block;
+    margin: 20px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+.cont_scr_sect {
+ 
+}
 .first-in-screach {
-    width: 100%;
-    margin: 0 auto;
-    background: url(../images/google-ya-bg.png) 75% top no-repeat;
+    margin: 88px auto;
     .screach-cover {
-	    text-align: center;
+	    
         margin-top: 88px;
         padding-left: 75px;
         background: url(../images/BE-THE-FIRST.png) no-repeat;
     }
     .discription-sreach {
-        width: 48.5%;
-    }
-    img{
-        max-width: 100%;
+        float: left;
+      width: 48.5%;
     }
     .img-screach-cover {
 	    width:400px;
@@ -469,7 +489,6 @@ nav{
         }
 }
     span{
-        display: block;
         text-align: left;
         width: 100%;
         color: #060606;
@@ -591,25 +610,31 @@ nav{
         cursor: pointer;
 }
 .adaptive-section {
-    background: url(../images/outline.png)right no-repeat;
     padding-top: 167px;
     padding-bottom: 130px;
-    .adaptive-section-cover {
-        background: url(../images/ADAPTATE.png) no-repeat;
-        padding-left: 75px;
-        margin: 30px 0;
-}
-    h3{
-        color: #060606;
-        font: 400 36px  Parangon530C;
-        padding-top: 15px;
-    }
-    p{
-        color: #000000;
-        font: 400 24px / 48px Arial;
-        line-height: 48px;
-        width: 545px;
-    }
+    .adaptive_cont {
+          background: url(../images/ADAPTATE.png) no-repeat;
+          width: 46%;
+          padding-left: 75px;
+          margin: 30px 0;
+          display: inline-block;
+          }
+            h3{
+                color: #060606;
+                font: 400 36px  Parangon530C;
+                padding-top: 15px;
+            }
+            p{
+                color: #000000;
+                font: 400 24px / 48px Arial;
+                line-height: 48px;
+      }
+  }
+.adaptiv_cont_img {
+	width: 49%;
+    margin-left: 35px;
+    display: inline-block;
+    text-align: center;
 }
 .trade-in-section {
     background: url(../images/trade-in-bg.png) no-repeat;
