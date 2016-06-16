@@ -10,7 +10,7 @@
 }
 @media screen and (max-width: 768px){
     .wrapper{
-      width: 750px;
+      width: 100%;
     } 
 }
 
@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 992px){
+  .discr-cover{
+    padding: 0 40px;
+  }
   .boxes-cover {
     .box_serv_disc {
       margin-left: 0;
@@ -61,8 +64,13 @@
   .what-we-make {
     text-align: center;
     margin-top: 40px;
+    padding: 0 15px;
     >div{
       width: 100%;
+      margin-bottom: 15px;
+      &:first-child{
+        padding-left: 25px;
+      }
     }
   }
   .studi-discr .cover-big-txt{
@@ -85,7 +93,6 @@
     }
 }
   .creating-section {
-    background-size: 100% 100%;
     .cover-creating{
       font-size: 35px;
       >div{
@@ -116,11 +123,19 @@
       font-size: 15px;
     }
   }
+  .adaptiv_cont_img{
+    margin-left: 0;
+  }
+  .trade-in-blocks {
+	padding: 0 25px;
+}
   .trade-in-section .trade-in-blocks div{
     width: 100%;
   }
 }
-
+.process-trd {
+	margin: 0;
+}
 //@media screen and (max-width: 768px){
 //  .creating-section .cover-creating>div{
 //    width: 100%;

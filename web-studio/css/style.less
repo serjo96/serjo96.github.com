@@ -12,7 +12,7 @@ main{
 .header_discr{
   padding-top: 203px;
 }
-header {
+#header {
         h2{
             display: block;
             color: #ffffff;
@@ -110,37 +110,36 @@ header {
     padding-bottom: 250px;
     >div{
         width: 32.97%;
-        min-height: 300px;
+        text-align: left;
+        padding: 0 24px;
+        padding-top: 83px;
         display: inline-block;
         position: relative;
         vertical-align: top;
+      &:before{
+        position: absolute;
+        left: 25px;
+        }
         &:first-child{
             &:before{
                 content:url('../images/rocket19-min.png');
-                position: absolute;
                 width: 30px;
                 height: 58px;
                 top: 13px;
-                left: 26px;
                 display: block;
             }
         }
         &:nth-child(2){
             &:before{
                 content:url('../images/mobile209-min.png');
-                position: absolute;
                 width: 28px;
                 height: 45px;
                 top: 13px;
-                left: 32px;
+              left: 25px;
                 display: block;
             }
         }
         &:nth-child(3){
-            background-color: #f6ae48;
-            span,p{
-                color: #ffffff!important;
-            }
             &:before{
                 content:url('../images/lifeline5-min.png');
                 position: absolute;
@@ -151,40 +150,44 @@ header {
                 display: block;
             }
         }
-        .we-make-cover{
-            text-align: left;
-            margin: 0 24px;
-            margin-left: 26px;
-            margin-top: 83px;
-            a{
-                text-decoration: none;
-                font-size: 22px;
-                color: #ffffff;
-                float: right;
-                position: relative;
-                top: 41px;
-                right: 20px;
-            }
-            >span{
-                color: #000000;
-                font: 700 24px 'Arial-Regular';
-                &:nth-child(3){
-                    text-align: center;
-                    border:2px solid #ffffff;
-                    padding:3px 12px;
-                    color: #ffffff;
-                    font: 400 18px 'MyriadPro-Regular';
-                    line-height: 6;
-                }
-            }
-            p{
-                color: #000000;
-                font: 400 15.34px 'Arial-Regular';
-                line-height: 30px;
-            }
-        }
     }
 }
+.orange {
+  background-color: #f6ae48;
+  .discr_us_abil, p{
+    color: #ffffff!important;
+  }
+}
+.start, .promotion, .orange {
+	
+    a{
+        text-decoration: none;
+        font-size: 22px;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 41px;
+        right: 20px;
+    }
+    .discr_us_abil{
+        color: #000000;
+        font: 700 24px 'Arial-Regular';
+        margin-bottom: 15px;
+      }
+       .support_price{
+            text-align: center;
+            border:2px solid #ffffff;
+            padding:3px 12px;
+            color: #ffffff;
+            font: 400 18px 'MyriadPro-Regular';
+            line-height: 6;
+        }
+    p{
+        color: #000000;
+        font: 400 15.34px 'Arial-Regular';
+        line-height: 30px;
+    }
+} 
 //navigation
 .visible{
     top:0;
@@ -240,7 +243,6 @@ nav{
 }
 //about us section
 .studi-discr {
-    width: 100%;
     margin: 0 auto;
     .discr-cover {
         padding-top: 173px;
@@ -253,17 +255,17 @@ nav{
         color: #000000;
         font: 700 35px helveticaneuecyrbold;
         display: inline-block;
-        margin-top: 10px;
     }
     .cover-head {
-	display: inline-block;
-    text-align: center;
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 225px;
 }
     .cover-big-txt{
         display: inline-block;
         vertical-align: middle;
         text-align: right;
-        width: 83%;
+        width: 60%;
     }
     p{
         display: inline-block;
@@ -277,8 +279,6 @@ nav{
 
 //credo-section
 .big-section{
-    min-height: 50%;
-//    height: 567px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -293,9 +293,6 @@ nav{
     .blue_bg {
        padding-top: 123px;
        padding-bottom: 138px;
-      }
-      .credo_comp{
-        
       }
       span{
         color: #ffffff;
@@ -380,8 +377,6 @@ nav{
             margin-top: 60px;
             margin-bottom: 29px;
             line-height: 58px;
-        }
-        .lading-page-name{
         }
         .web-site-name {
 	        width: 243px;
@@ -839,7 +834,9 @@ nav{
         }
     }
 }
-
+.price_tag{
+  position: relative;
+}
 .blue_bg {
   position: relative;
   background: rgba(73, 76, 115, 0.73);
