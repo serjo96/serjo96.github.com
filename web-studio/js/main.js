@@ -69,7 +69,7 @@ $(function() {
 });
 
   
-$.stellar();
+//$.stellar();
 
 
 var wow = new WOW(
