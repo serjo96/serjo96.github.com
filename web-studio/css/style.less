@@ -191,9 +191,7 @@ main{
     }
 } 
 //navigation
-.visible{
-    top:0;
-}
+
 nav{
     height: 70px;
     z-index: 100;
@@ -236,6 +234,9 @@ nav{
         bottom: -4px;
         background: #f6ae48;
     }
+}
+.visible{
+  top:0;
 }
 #contacts{
   height: 100%;
@@ -319,6 +320,7 @@ nav{
     background: url(../images/web-development-cropped-min.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 205px 0;
   >span{
     color: #ffffff;
     font: 400 50px Parangon530C;
@@ -330,7 +332,8 @@ nav{
     z-index: 15;
     }
     .cover-creating {
-      padding: 206px 15px;
+      padding: 0 15px;
+      overflow: hidden;
 //3 inline block
     >div{
         z-index: 30;
@@ -637,6 +640,7 @@ nav{
     min-height: 675px;
     padding-bottom: 150px;
     text-align: center;
+    overflow: hidden;
     h3{
         padding-top: 60px;
         color: #ffffff;
@@ -644,7 +648,7 @@ nav{
     }
     .trade-in-blocks {
         margin-top: 110px;
-        div{
+        >div{
             display: inline-block;
             vertical-align: top;
             width: 23.283%;
@@ -656,12 +660,7 @@ nav{
                 top: -10px;
             }
             
-            h4{
-                color: #ffffff;
-                font: 400 30px  Parangon530C;
-                text-align: left;
-                margin-left: 85px;
-            }
+           
             p{  
                 margin-top: 30px;
                 color: #ffffff;
@@ -672,28 +671,52 @@ nav{
         }
     }
 }
+
+
+.name_tr_b{
+  color: #ffffff;
+  font: 400 30px  Parangon530C;
+  text-align: left;
+  float: left;
+  position: relative;
+  padding-left: 85px;
+  &:before{
+    position: absolute;
+    top: -5px;
+    left:0;
+  }
+}
      
     .programm-trd {
+.name_tr_b{
+  
             &:before{
                 content: url('../images/programm-ico-min.png');            
                 width: 69px;
                 height: 48px;
             }
+}
         }
         .process-trd {
-            margin: 0 40px;
+.name_tr_b{
+  
             &:before{
                 content: url('../images/process-ico-min.png'); 
                 width: 67px;
                 height: 67px;
+                top: -10px;
             }
+}
         }
         .conditions-trd {
+.name_tr_b{
             &:before{
                 content: url('../images/diamond-ico-min.png');  
                 width: 64px;
                 height: 49px;
             }
+  
+}
         }
 .chek-my-site {
     color: #ffffff;
@@ -750,96 +773,93 @@ nav{
         line-height: 27px;
         
     }
-    form{
-        float: right;
-        width: 606px;
-        border-top: 3px solid  #fff;
-        span{
-            color: #ffffff;
-            font: 400 14px  Arial;
-            display: inline-block;
-            margin-left: 24px;
-            margin-right: 59px;
-            vertical-align: top;
-            margin-top: 10px;
-        }
-            ::-webkit-input-placeholder {
-                    color: #ffffff;
-                    font: 400 18px  Arial;
-                }
-            ::-moz-placeholder          {
-                    color: #ffffff;
-                    font: 400 18px  Arial;
-                }/* Firefox 19+ */
-        :-moz-placeholder           {
-                    color: #ffffff;
-                    font: 400 18px  Arial;
-        }/* Firefox 18- */
-        :-ms-input-placeholder      {
-                    color: #ffffff;
-                    font: 400 18px  Arial;
-                }
-        input{
-            background: transparent;
-            border-top: none;
-            color: #ffffff;
-            font: 400 18px  Arial;
-        }
-        textarea{
-            width: 100%;
-            height: 160px;
-            padding-top: 15px;
-            padding-left: 18px;
-            background: transparent;
-            color: #ffffff;
-            font: 400 18px  Arial;
-            resize: none;
-            border-left: 3px solid #ffffff;
-            border-right: 3px solid #ffffff;
-            border-bottom: 3px solid #ffffff;
-            border-top: none;
-        }
-        #name{
-            padding-top: 14px;
-            padding-bottom: 13px;
-            padding-left: 18px;
-            border-right: 3px solid #ffffff;
-            border-left: 3px solid #ffffff; 
-            border-bottom:none;
-            width: 49.3%;
-        }
-        #last-name{
-            width: 50%;
-            padding-top: 14px;
-            padding-bottom: 13px;
-            padding-left: 18px;
-            border-right: 3px solid #ffffff;
-            border-bottom:none;
-            border-left: none;
-        }
-        #email{
-            width: 100%;
-            padding-left: 19px;
-            padding-top: 17px;
-            padding-bottom: 16px;
-            border-bottom: 3px solid #ffffff;
-            border-top: 3px solid #ffffff;
-            border-left: 3px solid #ffffff;
-            border-right: 3px solid #ffffff;
-        }
-        #submit{
-            color: #ffffff;
-            font: 400 14px  Parangon530C;
-            padding: 15px 23px;
-            margin-top: 10px;
-            letter-spacing: 1px;
-            padding-bottom: 14px;
-            background: #f6ae48;
-            border-radius: 15px;
-            border: none;
-        }
-    }
+   
 }
+.c_sectiom_wrapper {
+  padding: 0 30px;
+}
+.c-form{
+  border: 3px solid #fff;
+}
+.contact_form {
+  float: left;
+  margin-left: 202px;
+  width: 50%;
+  span{
+    color: #ffffff;
+    font: 400 14px  Arial;
+    display: inline-block;
+    margin-left: 24px;
+    margin-right: 59px;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  ::-webkit-input-placeholder {
+    color: #ffffff;
+    font: 400 18px  Arial;
+  }
+  ::-moz-placeholder          {
+    color: #ffffff;
+    font: 400 18px  Arial;
+  }/* Firefox 19+ */
+  :-moz-placeholder           {
+    color: #ffffff;
+    font: 400 18px  Arial;
+  }/* Firefox 18- */
+  :-ms-input-placeholder      {
+    color: #ffffff;
+    font: 400 18px  Arial;
+  }
+  input{
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #fff;
+    color: #ffffff;
+    font: 400 18px  Arial;
+  }
+  textarea{
+    width: 100%;
+    height: 160px;
+    padding-top: 15px;
+    padding-left: 18px;
+    background: transparent;
+    color: #ffffff;
+    font: 400 18px  Arial;
+    resize: none;
+    border: none;
+  }
+}
+  #name{
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    border-right: 3px solid #ffffff; 
+    width: 50%;
+  }
+  #last-name{
+    width: 50%;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+  }
+  #email{
+    width: 100%;
+    padding-left: 19px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  #submit{
+    color: #ffffff;
+    font: 400 14px  Parangon530C;
+    padding: 15px 23px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 14px;
+    background: #f6ae48;
+    border-radius: 15px;
+    border: none;
+  }
+
 .price_tag{
   position: relative;
 }

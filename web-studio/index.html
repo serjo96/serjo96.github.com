@@ -48,7 +48,7 @@
 
     </div>
   </header>
-  <nav>
+  <nav id="nav">
     <ul id="nav_menu">
       <li><a class="active" href="#">Главная</a></li>
       <li class="current_page_item"><a href="#about-us">О нас</a></li>
@@ -277,15 +277,21 @@
       <h3>TRADE-IN</h3>
       <div class="trade-in-blocks">
         <div class="programm-trd wow rotateInDownLeft">
-          <h4>ПРОГРАММА</h4>
+          <div class="trade_b_head clearfix">
+            <span class='name_tr_b'>ПРОГРАММА</span>
+          </div>
           <p>Если Вы решили обновить свой сайт или интернет-магазин, то программа трейд-ин именно то, что Вам нужно.Благодаря данной программе, Вы сможете приобрести новый сайт с минимальными вложениями, при этом утилизировав старый. Вам лишь нужно связаться с нашим отделом трейд-ин по телефону 8 (499) 390 6083, отправить письмо на адрес www@trofimov.org, либо разместить заявку на сайте.</p>
         </div>
         <div class="process-trd wow rotateIn">
-          <h4>ПРОЦЕСС РАБОТЫ</h4>
+          <div class="trade_b_head clearfix">
+            <span class='name_tr_b'>ПРОЦЕСС РАБОТЫ</span>
+          </div>
           <p>Мы делаем предварительную оценку, параллельно, с Вами согласовываем веб интерфейс и систему управления, и если Вас все устраивает, заключаем договор. При этом Вам не придется останавливать работу в интернете, так как передача Вашего сайта осуществляется только после разработки нового. Тем самым Вы экономите не только время, но и деньги.</p>
         </div>
         <div class="conditions-trd wow rotateInDownRight">
-          <h4>УСЛОВИЯ</h4>
+          <div class="trade_b_head clearfix">
+            <span class='name_tr_b'>УСЛОВИЯ</span>
+          </div>
           <p>Вам нужно предоставить максимум информации о предоставляемом интернет-проекте, которое Вы хотите обновить.Данная информация поможет нам в кратчайшие сроки рассмотреть Ваш запрос и дать положительный ответ. Для этого, убедительно просим Вас, присылать информацию на Вашем фирменном бланке с печатью, а так же фотографии домена и хостинга.</p>
         </div>
       </div>
@@ -306,24 +312,33 @@
 
       <div class="contact-section" >
         <div class="wrapper clearfix">
+         <div class="c_sectiom_wrapper clearfix">
           <div class="contact-section-cover">
             <h4>СВЯЖИТЕСЬ С НАМИ</h4>
             <p>Готовы начать работу? Отправьте сообщение и свои контакты, мы ответим вам в течении 2-ух дней. Схема работы с каждым клиентом будет разработана индивидуально в зависимости от поставленных задач.</p>
           </div>
-          <form method="post" action="/php/index.php">
+          <div class="contact_form">
+            
+            <form method="post" action="/php/index.php">
+              <div class="c-form">
+                <input id="name" name="name" placeholder="Ваше имя" required><!--
 
-            <input id="name" name="name" placeholder="Ваше имя" required>
+              --><input id="last-name" name="name" placeholder="Ваша фамилия" required>
 
-            <input id="last-name" name="name" placeholder="Ваша фамилия" required>
+                <input id="email" name="email" type="email" placeholder="E-mail" required>
 
-            <input id="email" name="email" type="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Введите ваше сообщение" required></textarea>
+                
+              </div>
 
-            <textarea name="message" placeholder="Введите ваше сообщение" required></textarea>
 
-            <span>Наши специалисты свяжутся с вами как можно скорее</span>
+              <span>Наши специалисты свяжутся с вами как можно скорее</span>
 
-            <input id="submit" name="submit" type="submit" value="ОТПРАВИТЬ" class="sumbit">
-          </form>
+              <input id="submit" name="submit" type="submit" value="ОТПРАВИТЬ" class="sumbit">
+            </form>
+            
+            </div>
+          </div>
         </div>
       </div>
     </section>

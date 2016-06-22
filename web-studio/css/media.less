@@ -42,6 +42,18 @@
   }
   .adaptiv_cont_img {
       width: 100%;	
+    margin-left: 0;
+  }
+  .trade-in-section {
+      .trade-in-blocks {
+        >div{
+          width: 100%;
+          margin-bottom: 35px;
+          p{
+            margin-top: 20px;
+          }
+        }	
+    }
   }
 }
 
@@ -144,8 +156,12 @@
 
 @media screen and (max-width: 768px){
   .creating-section .cover-creating{
-   
-    div{
+   .bl_web_site {
+      margin: 20px 0;
+	
+}
+    >div{
+      width: 100%;
       .create-block-name {
 	      margin-top: 15px;
           line-height: 40px;
@@ -156,4 +172,74 @@
     }
     
   }
+}
+@media screen and (max-width: 570px){
+  nav{
+    display: none;
+  }
+  .big-section {
+    span{
+	  font-size: 30px;
+    }
+}
+  .creating-section {
+    span{
+      position:static;
+      margin-bottom: 15px;
+    }
+}
+  .first-in-screach {
+    p{
+      font-size: 15px;
+      line-height: 30px;
+    }
+}
+  .screach_img {
+    margin-top: 20px;
+    img{
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+  .care-for-each{
+    h4{
+      font-size: 20px;
+      
+    }
+    p{
+      line-height: 32px;
+      font-size: 20px;
+    }
+    .care-for-each-cover {
+	    width: 100%;
+    }
+  }
+  .care_img {
+	margin-left: 0;
+  }
+  .contact-section {
+	.contact-section-cover {
+      width: 100%;	
+  }
+}
+  .contact_form {
+	margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+    ::-webkit-input-placeholder {
+      font: 400 13px  Arial;
+    }
+    ::-moz-placeholder          {
+      font: 400 13px  Arial;
+    }/* Firefox 19+ */
+    :-moz-placeholder           {
+      font: 400 13px  Arial;
+    }/* Firefox 18- */
+    :-ms-input-placeholder      {
+      font: 400 13px  Arial;
+    }
+    span{
+      margin-left: 0;
+    }
+  }  
 }
