@@ -5,11 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title></title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate-min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+  <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+  <!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+  <style> body{background:#fff}main{height:100%}.wrapper{margin:0 auto;width:1245px}.header_discr{padding:0 20px}#header h2{display:block;color:#fff;font:400 45px Parangon530C;text-align:center}#header p{display:block;margin-top:16px;color:#fff;font:400 24px / 36px PT Sans;text-align:center}.boxes-cover{text-align:center;margin-top:90px}.boxes-cover div{display:inline-block;margin:0 30px;margin-bottom:121px;width:251px;height:160px;border:2px solid transparent;-webkit-border-image:url(images/head-border-min.png) 1%;-o-border-image:url(images/head-border-min.png) 1%;border-image:url(images/head-border-min.png) 1%;position:relative;vertical-align:top}.boxes-cover div:before{position:absolute;width:36px;height:34px;top:-14px;left:-5px;right:0;margin:0 auto;display:block}.boxes-cover div:first-child:before{content:url(images/favourite24-min.png)}.boxes-cover div:nth-child(2):before{content:url(images/tasks3-min.png)}.boxes-cover div:nth-child(3):before{content:url(images/accessory32-min.png)}.boxes-cover div span{font:400 48px Parangon530C;text-align:center;color:#fff;display:block;margin-top:30px}.boxes-cover div p{text-align:center;color:#fff;font:18px / 36px PT Sans}.head-text{width:56%;margin:0 auto}.disc_sect{display:block;text-align:left;width:100%;color:#060606;font:400 36px Parangon530C}.big_header{background:url(images/IMG_3644-min.png) no-repeat;-webkit-background-size:cover;background-size:cover;background-attachment:fixed;min-height:100%;width:100%}.big_header .blue_bg{padding-top:203px;padding-bottom:150px}</style>
+
+  <!-- Load CSS Start -->
+  <script>loadCSS( "css/clear.css", false, "all" );</script>
+  <!--  <script>loadCSS( "css/fonts.css", false, "all" );</script>-->
+  <script>loadLocalStorageCSS( "webfonts", "css/fonts.css" );</script>
+  <script>loadCSS( "css/style.css", false, "all" );</script>
+  <script>loadCSS( "css/media.css", false, "all" );</script>
+  <script>loadCSS( "css/animate-min.css", false, "all" );</script>
+  <!-- Load CSS End -->
+
+  <!-- Load CSS Compiled without JS -->
+  <noscript>
+    <link rel="stylesheet" href="css/fonts.css">
+  </noscript>
 </head>
 
 <body>
@@ -344,9 +360,13 @@
     </section>
   </main>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<!--  <script src="js/jquery.stellar.min.js"></script>-->
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Load Scripts Start -->
+  <script>var scr = {"scripts":[
+  {"src" : "js/wow.min.js", "async" : false},
+  {"src" : "js/main.js", "async" : false},
+]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+  </script>
+  <!-- Load Scripts End -->
 </body>
 
 </html>
