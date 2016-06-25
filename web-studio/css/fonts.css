@@ -1,20 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 @import "../fonts/Futura/styles.css";
-/*@import "../fonts/paragon530/styles.css";*/
+@import "../fonts/paragon530/styles.css";
 @import "../fonts/helveticaneuecyrbold/stylesheet.css";
 @import "../fonts/helveticaneuecyr/stylesheet.css"; 
 @import "../fonts/MyriadProRegular/styles.css";
 @import "../fonts/Arial-Regular/Arial-Regular.css";
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700);
 
-
-@font-face {
-  font-family: 'Parangon530C';
-  src: url('/paragon530/Parangon530C.eot?#iefix') format('embedded-opentype'),
-       url('/paragon530/Parangon530C.otf') format('opentype'), 
-       url('/paragon530/Parangon530C.woff') format('woff'), 
-       url('/paragon530/Parangon530C.ttf') format('truetype'),
-       url('/paragon530/Parangon530C.svg#Parangon530C') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
