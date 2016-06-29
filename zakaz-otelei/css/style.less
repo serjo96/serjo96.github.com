@@ -1,6 +1,4 @@
-.container {
-	width: 1200px;
-}
+
 .page-nav {
   margin-top: 13px;
   padding-top: 12px;
@@ -42,7 +40,13 @@
 }
 .text_cont{
   color: #333333;
-  font: 400 15px / 21px Open Sans;
+  font: 400 15px Open Sans;
+}
+.top_blocks_travel{
+  margin-top: 15px;
+  >div{
+    float: left;
+  }
 }
 .all-from-travel {
 	margin-top: 8px;
@@ -57,10 +61,79 @@
 .cont_travel_blocks{
   padding-left: 19px;
   padding-right: 15px;
-  padding-top: 23px;
+  padding-top: 20px;
+  position: relative;
 }
-.hotel_travel{
-  .image_blocks_travel {
-
+.cont_travel_blocks:after,
+.cont_travel_blocks:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.cont_travel_blocks:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #f0f0f0;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.cont_travel_blocks:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #f0f0f0;
+  border-width: 12px;
+  margin-left: -12px;
+}
+.name_cont {
+  color: #333333;
+  font: 600 18px Open Sans;
+}
+.more_btn {
+	text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.btn_orange {
+  color: #dd5f0a;
+  font: 600 13px Open Sans;
+  border: 1px solid #dd5f0a;
+  padding-left: 33px;
+  padding-right: 34px;
+  line-height: 2;
+  display: inline-block;
+}
+.hotel-travel{
+  width: 45.4%;
+  .more_btn {
+    padding-top: 36px;
   }
 } 
+.taxi-travel {
+  width: 25.4%;
+  margin: 0 17px;
+  .more_btn {
+      padding-top: 36px;	
+  }
+}
+.visa-travel {
+  width: 25.4%;
+}
+.bottom_blocks_travel{
+  margin-top: 17px;
+  >div{
+    float: left;
+  }
+}
+.conference-travel {
+  width: 25.4%;
+}
+.avia_travel {
+  width: 45.4%;
+  margin: 0 17px;
+}
+.grop_travel{
+  width: 25.4%;
+}
