@@ -1,0 +1,53 @@
+html,body,div,dl,dt,dd,ul,ol,li,form,table,tr,td,h1,h2,h3,h4,h5,h6,pre,p,span,b,i,a,input,textarea,
+fieldset {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+:focus {
+    outline: 0;
+}
+ul {
+    list-style-type: none;
+}
+li{
+    list-style: none;
+}
+img,
+fieldset {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.vertical:before{
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}

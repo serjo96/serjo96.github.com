@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>magazine</title>
+    <link rel="stylesheet" href="css/clear.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">logo</div>
+      <div class="menu">
+        <ul class="menu__item">
+          <li><a class="menu__item__link" href="#">Раздел 1</a></li>
+          <li><a class="menu__item__link" href="#">Раздел 2</a></li>
+          <li><a class="menu__item__link" href="#">Раздел 3</a></li>
+          <li><a class="menu__item__link" href="#">Раздел 4</a></li>
+        </ul>
+      </div>
+      <div class="cart">
+        <a href="cont.html" class="cart__link">В корзине <span class="nubmer__cart"></span>товаров</a>
+      </div>
+    </header>
+    <main id="main">
+     <div class="wrapper">
+      <form action="#" class="page-basket">
+        <div class="page-basket__step-items">
+          <div class="basket-title page-basket__title">
+            <h1>Оформление заказа</h1>
+          </div>
+          <div class="page-basket__items">
+            
+             <div class="basket-item">
+              <div class="basket_item__image-link"></div>
+              <div class="basket-item__main-title">
+                <a href="#">Товар 1</a>
+              </div>
+              <div class="page__basket-line"></div>
+              <div class="price_theme_basket-item"><span class="price__item">8 500</span> руб.</div>
+              
+               <div class="cart-clicker">
+                <div class="input-quantity__button input-quantity__dec"></div>
+                <div class="input-quantity__val">
+                  <div class="input-quantity__val-input">
+                    <input type="text">
+                  </div>
+                </div>
+              <div class="input-quantity__button input-quantity__inc"></div>
+              </div>
+              <div class="page__basket_min-line"></div>
+              <div class="basket-item__main-delete">Убрать</div>
+            </div>
+          
+            <div class="basket-item">
+              <div class="basket_item__image-link"></div>
+              <div class="basket-item__main-title">
+                <a href="#">Товар 2</a>
+              </div>
+              <div class="page__basket-line"></div>
+              <div class="price_theme_basket-item"><span class="price__item">8 500</span> руб.</div>
+
+              <div class="cart-clicker">
+                <div class="input-quantity__button input-quantity__dec"></div>
+                <div class="input-quantity__val">
+                  <div class="input-quantity__val-input">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="input-quantity__button input-quantity__inc"></div>
+              </div>
+              <div class="page__basket_min-line"></div>
+              <div class="basket-item__main-delete">Убрать</div>
+            </div>
+      
+            <div class="basket-items-summary">Итого: <span class="price__item">8 500</span> руб.</div>
+          </div>
+        </div>
+        
+        <div class="page-basket__step-info">
+          <div class="basket-personal">
+            <div class="basket-personal__field basket-personal__field_type_fio">
+              <input class='input_theme_basket' type="text" required placeholder="Ваше имя">
+            </div>
+            <div class="basket-personal__field basket-personal__field_type_email">
+              <input class='input_theme_basket' type="text" required placeholder="Email">
+            </div>
+            <div class="basket-personal__field basket-personal__field_type_phone-phys">
+              <input class='input_theme_basket' type="text" required placeholder="Телефон">
+            </div>
+            <div class="basket-personal__field basket-personal__field_type_delivery">
+              <input class='input_theme_basket' type="text" required placeholder="Адрес доставки">
+            </div>
+            <div class="basket-personal__field basket-personal__field_type_coment">
+              <textarea class="textarea_theme_basket" name="" id="" cols="30" rows="10" required placeholder="Комментарий"></textarea>
+            </div>
+          </div>
+        <div class="basket-confirm">
+          <input class="basket_confirm__button button--blue" name="submit" type="submit" value="Оформить заказ" class="sumbit">
+        </div>
+        </div>
+      </form>
+      </div>
+    </main>
+   
+    <footer id="footer">
+      <div class="name-company">Company name - 2016</div>
+
+      <div class="menu">
+        <ul class="menu__item">
+          <li><a class="menu__item__link" href="#">Раздел 1</a></li>
+          <li><a class="menu__item__link" href="#">Раздел 2</a></li>
+          <li><a class="menu__item__link" href="#">Раздел 3</a></li>
+          <li><a class="menu__item__link" href="#">Раздел 4</a></li>
+        </ul>
+      </div>
+    </footer>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
