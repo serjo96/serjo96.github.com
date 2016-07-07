@@ -100,9 +100,9 @@
             </div>
               
             <div class="page__basket_min-line"></div>
-            <div class="basket-item__main-delete js-remove-from-cart" data-id="<%= good.id %>Убрать</div>
+            <div class="basket-item__main-delete js-remove-from-cart" data-id="<%= good.id %>">Убрать</div>
 
-            <div class="basket-items-summar js-summay">Итого: <span class="price__item"><%= good.count * good.price %></span> руб.</div>
+            <div class="basket-items-summar">Итого: <span class="price__item" id="total-cart-summa"></span> руб.</div>
       </div>
       <% }); %>
     </script>
