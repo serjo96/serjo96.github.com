@@ -82,7 +82,7 @@
               <div class="price_theme_basket-item"><span class="price__item"><%= good.price %></span> руб.</div>
 
                <div class="cart-clicker">
-                <div class="input-quantity__button input-quantity__inc js-button__inc"
+                <div class="input-quantity__button input-quantity__inc js-change-count"
                         title="Увеличить на 1" 
                         data-id="<%= good.id %>" 
                         data-delta="1">
@@ -92,7 +92,7 @@
                     <input class="input-quantity__val-input js-count" type="text" value="<%= good.count %>">
                 </div>
 
-              <div class="input-quantity__button input-quantity__dec js-button__decjs-change-count" 
+              <div class="input-quantity__button input-quantity__dec js-change-count" 
                         title="Уменьшить на 1" 
                         data-id="<%= good.id %>" 
                         data-delta="-1">
