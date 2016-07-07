@@ -2,37 +2,31 @@
     {
         "id": "1",
         "name": "Товар 1",
-        "price": "8500",
-        "img": "img/cars/notebook_lenovo.jpg"
+        "price": "8500"
     },
     {
         "id": "2",
         "name": "Товар 2",
-        "price": "8500",
-        "img": "img/cars/camera_nikon.jpg"
+        "price": "4500"
     },
     {
         "id": "3",
         "name": "Товар 3",
-        "price": "8500",
-        "img": "img/cars/ipad.jpg"
+        "price": "8500"
     },
     {
         "id": "4",
         "name": "Товар 4",
-        "price": "8500",
-        "img": "img/cars/phone_galaxy.jpg"
+        "price": "2500"
     },
     {
         "id": "5",
         "name": "Товар 5",
-        "price": "8500",
-        "img": "img/cars/tv_supra.jpg"
+        "price": "8500"
     },
     {
         "id": "6",
         "name": "Товар 6",
-        "price": "8500",
-        "img": "img/cars/tv_supra.jpg"
+        "price": "8500"
     }
 ]

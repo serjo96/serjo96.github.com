@@ -7,6 +7,9 @@ var catalog = (function($) {
     function init() {
         _render();
     }
+  function init_six() {
+      _renders();
+    }
 
     // Рендерим каталог
     function _render() {
@@ -17,11 +20,25 @@ var catalog = (function($) {
             $goods.html(template({goods: data}));
         });
     }
+    
+
 
 
     // Экспортируем наружу
     return {
-        init: init
+      init: init,
+      init_six: init_six
+        
     }
+    
+    function _renders() {
+      var template = _.template($('#catalog-six-template').html()),
+          $goods = $('#js-load-catalogue');
+
+      $.getJSON('data/six.json', function(data) {
+        $goods.html(template({goods: data}));
+      });
+    }
+  
     
 })(jQuery);

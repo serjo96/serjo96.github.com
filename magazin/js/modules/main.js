@@ -6,9 +6,9 @@ $(document).ready(function() {
 });
 
 
-$(document).on('click', '#js-more_items', function(){
-  $("#js-load-catalogue").load("bloks.html");
-});
+//$(document).on('click', '#js-more_items', function(){
+//  $("#js-load-catalogue").load("bloks.html");
+//});
 
 
 'use strict';
@@ -67,4 +67,7 @@ var app = (function($) {
 })(jQuery);
 
 jQuery(document).ready(app.init);
- 
+$(document).on('click', ('#js-more_items'), function(){
+  catalog.init_six()
+  console.log('2');
+});
