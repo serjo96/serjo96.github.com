@@ -24,17 +24,18 @@
     <main id="main">
      <div class="wrapper">
       <form id="form" action="#" class="page-basket">
-        <div class="page-basket__step-items">
+        
+         <div class="page-basket__step-items">
           <div class="basket-title page-basket__title">
             <h1>Оформление заказа</h1>
           </div>
           <div class="page-basket__items" id='cart'>
             
-            
           </div>
+            <div class="basket-items-summar">Итого: <span class="price__item" id="total-cart-summa"></span> руб.</div>
         </div>
         
-        <div class="page-basket__step-info">
+         <div class="page-basket__step-info">
           <div class="basket-personal">
             <div class="basket-personal__field basket-personal__field_type_fio">
               <input class='input_theme_basket' type="text" required placeholder="Ваше имя">
@@ -102,7 +103,7 @@
             <div class="page__basket_min-line"></div>
             <div class="basket-item__main-delete js-remove-from-cart" data-id="<%= good.id %>">Убрать</div>
 
-            <div class="basket-items-summar">Итого: <span class="price__item" id="total-cart-summa"></span> руб.</div>
+            
       </div>
       <% }); %>
     </script>
