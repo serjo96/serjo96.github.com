@@ -120,6 +120,7 @@ a{
   display: inline-block;
   vertical-align: top;
   margin-left: 20px;
+  width: 64%; 
 }
 
 .item-catalogue-list__items{
@@ -142,9 +143,16 @@ a{
   border: 1px solid #bcbcbc;
   background: #f2f2f2;
 }
+
 .item-catalogue__info{
   margin-top: 15px;
 }
+
+.item-catalogue__item-name{
+  color: #00f;
+  text-decoration: underline;
+}
+
 .price_theme_item-catalogue{
   display: inline-block;
 }
@@ -155,6 +163,7 @@ a{
   margin-left: 31px;
   cursor: pointer;
 }
+
 .button--blue {
   background: #00f;
   color: #fff;
@@ -222,15 +231,16 @@ a{
 .price__item {
 	font-weight: 600;
 }
-.input-quantity__val-input{
+.input-quantity__val{
   margin: 8px 0;
-  input{
-    width: 37px;
-    padding-left: 13px;
-  }
 }
 
-.input-quantity__dec{
+.input-quantity__val-input{
+    width: 37px;
+    padding-left: 13px;
+}
+
+.input-quantity__inc{
   width: 0; 
   height: 0; 
   border-left: 10px solid transparent;
@@ -240,7 +250,7 @@ a{
   cursor: pointer;
 }
 
-.input-quantity__inc{
+.input-quantity__dec{
   width: 0; 
   height: 0; 
   border-left: 10px solid transparent;

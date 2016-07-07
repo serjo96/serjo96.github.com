@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Товар 1",
+        "price": "8500",
+        "img": "img/cars/notebook_lenovo.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Товар 2",
+        "price": "8500",
+        "img": "img/cars/camera_nikon.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Товар 3",
+        "price": "8500",
+        "img": "img/cars/ipad.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Товар 4",
+        "price": "8500",
+        "img": "img/cars/phone_galaxy.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Товар 5",
+        "price": "8500",
+        "img": "img/cars/tv_supra.jpg"
+    }
+]
