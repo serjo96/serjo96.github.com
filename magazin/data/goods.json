@@ -28,5 +28,11 @@
         "name": "Товар 5",
         "price": "8500",
         "img": "img/cars/tv_supra.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Товар 6",
+        "price": "8500",
+        "img": "img/cars/tv_supra.jpg"
     }
 ]

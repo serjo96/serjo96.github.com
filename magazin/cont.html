@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="css/clear.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body data-page="cart">
     <header id="header">
       <div class="logo">logo</div>
       <div class="menu">
         <ul class="menu__item">
-          <li><a class="menu__item__link" href="#">Раздел 1</a></li>
+          <li><a class="menu__item__link" href="index.html">Раздел 1</a></li>
           <li><a class="menu__item__link" href="#">Раздел 2</a></li>
           <li><a class="menu__item__link" href="#">Раздел 3</a></li>
           <li><a class="menu__item__link" href="#">Раздел 4</a></li>
         </ul>
       </div>
-      <div class="cart">
-        <a href="cont.html" class="cart__link">В корзине <span class="nubmer__cart"></span>товаров</a>
+      <div class="cart-menu">
+        <a href="cont.html" class="cart__link">В корзине <span id="total-cart-count"></span> товаров</a>
       </div>
     </header>
     <main id="main">
@@ -28,49 +28,9 @@
           <div class="basket-title page-basket__title">
             <h1>Оформление заказа</h1>
           </div>
-          <div class="page-basket__items">
+          <div class="page-basket__items" id='cart'>
             
-             <div class="basket-item">
-              <div class="basket_item__image-link"></div>
-              <div class="basket-item__main-title">
-                <a href="#">Товар 1</a>
-              </div>
-              <div class="page__basket-line"></div>
-              <div class="price_theme_basket-item"><span class="price__item">8 500</span> руб.</div>
-              
-               <div class="cart-clicker">
-                <div class="input-quantity__button input-quantity__inc js-button__inc"></div>
-                
-                <div class="input-quantity__val">
-                    <input class="input-quantity__val-input" type="text">
-                </div>
-              
-              <div class="input-quantity__button input-quantity__dec js-button__dec"></div>
-              </div>
-              <div class="page__basket_min-line"></div>
-              <div class="basket-item__main-delete">Убрать</div>
-            </div>
-          
-            <div class="basket-item">
-              <div class="basket_item__image-link"></div>
-              <div class="basket-item__main-title">
-                <a href="#">Товар 2</a>
-              </div>
-              <div class="page__basket-line"></div>
-              <div class="price_theme_basket-item"><span class="price__item">8 500</span> руб.</div>
-
-              <div class="cart-clicker">
-                <div class="input-quantity__button input-quantity__inc js-button__inc"></div>
-                <div class="input-quantity__val">
-                    <input class="input-quantity__val-input" type="text">
-                </div>
-                <div class="input-quantity__button input-quantity__dec js-button__dec"></div>
-              </div>
-              <div class="page__basket_min-line"></div>
-              <div class="basket-item__main-delete">Убрать</div>
-            </div>
-      
-            <div class="basket-items-summary">Итого: <span class="price__item">8 500</span> руб.</div>
+            
           </div>
         </div>
         
@@ -112,7 +72,44 @@
         </ul>
       </div>
     </footer>
+    
+    <script id="cart-template" type="text/template">
+        <% _.each(goods, function(good) { %>
+             <div class="basket-item js-cart-item" data-id="<%= good.id %>">
+              <div class="basket_item__image-link"></div>
+              <div class="basket-item__main-title"><%- good.name %></div>
+              <div class="page__basket-line"></div>
+              <div class="price_theme_basket-item"><span class="price__item"><%= good.price %></span> руб.</div>
+
+               <div class="cart-clicker">
+                <div class="input-quantity__button input-quantity__inc js-button__inc"
+                        title="Увеличить на 1" 
+                        data-id="<%= good.id %>" 
+                        data-delta="1">
+                  </div>
+
+                <div class="input-quantity__val">
+                    <input class="input-quantity__val-input js-count" type="text" val=""><%= good.count %>
+                </div>
+
+              <div class="input-quantity__button input-quantity__dec js-button__decjs-change-count" 
+                        title="Уменьшить на 1" 
+                        data-id="<%= good.id %>" 
+                        data-delta="-1">
+                </div>
+            </div>
+              
+            <div class="page__basket_min-line"></div>
+            <div class="basket-item__main-delete js-remove-from-cart" data-id="<%= good.id %>Убрать</div>
+      </div>
+
+            <div class="basket-items-summar js-summay">Итого: <span class="price__item"><%= good.count * good.price %></span> руб.</div>
+      <% }); %>
+    </script>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/underscore.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

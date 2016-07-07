@@ -17,7 +17,7 @@
         <li><a class="menu__item__link" href="#">Раздел 4</a></li>
       </ul>
     </div>
-    <div class="cart">
+    <div class="cart-menu">
       <a href="cont.html" class="cart__link">В корзине <span id="total-cart-count"></span> товаров</a>
     </div>
   </header>
@@ -141,29 +141,16 @@
         <div class="item-catalogue-list__title">
           <h1>Категория товаров #1</h1>
         </div>
-        <div class="item-catalogue-list__items" id="js-catalohue-list">
+        <div class="item-catalogue-list__items" id="js-catalogue-list">
 
-        <script id="catalog-template" type="text/template">
-          <% _.each(goods, function(good) { %>
-           <div class="item-catalogue">
-              <div class="image__cataloge"></div>
-              <div class="item-catalogue__info">
-                <div class="item-catalogue__item-name">Товар <%= good.id %></div>
-                <div class="price_theme_item-catalogue"><span class="price__item">8 500</span> руб.</div>
-                <div class="item-catalogue__buy-button button--blue">
-                  <span class="buy-button js-add-to-cart" data-id="<%= good.id %>" data-name="<%- good.name %>" data-price="<%= good.price %>">В корзину</span>
-                </div>
-              </div>
-            </div>
-               <% }); %>
-          </script>
+        
 
           
+          </div>
           <div id="js-load-catalogue"></div>
 
           <div class="more-items">
             <div id="js-more_items" class="more__btn">Показать еще 6 товаров</div>
-          </div>
           </div>
         </div>
       </div>
@@ -182,6 +169,20 @@
           </ul>
         </div>
     </footer>
+    <script id="catalog-template" type="text/template">
+          <% _.each(goods, function(good) { %>
+           <div class="item-catalogue">
+              <div class="image__cataloge"></div>
+              <div class="item-catalogue__info">
+                <div class="item-catalogue__item-name"><%- good.name %></div>
+                <div class="price_theme_item-catalogue"><span class="price__item"><%= good.price %></span> руб.</div>
+                <div class="item-catalogue__buy-button button--blue">
+                  <span class="buy-button js-add-to-cart" data-id="<%= good.id %>" data-name="<%- good.name %>" data-price="<%= good.price %>">В корзину</span>
+                </div>
+              </div>
+          </div>
+          <% }); %>
+    </script>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="js/underscore.min.js"></script>
   <script src="js/main.js"></script>

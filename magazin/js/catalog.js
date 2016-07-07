@@ -11,7 +11,7 @@ var catalog = (function($) {
     // Рендерим каталог
     function _render() {
         var template = _.template($('#catalog-template').html()),
-            $goods = $('#js-catalohue-list');
+            $goods = $('#js-catalogue-list');
 
         $.getJSON('data/goods.json', function(data) {
             $goods.html(template({goods: data}));
