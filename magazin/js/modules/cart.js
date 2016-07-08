@@ -193,7 +193,7 @@ var cart = (function($) {
                 $cartElem = findCartElemById(id),
                 cartItem = changeCount(id, delta);
             if (cartItem.count) {
-                $cartElem.find(opts.elCartCount).html(cartItem.count);
+                $cartElem.find(opts.elCartCount).val(cartItem.count);
                 $cartElem.find(opts.elCartSumma).html(cartItem.count * cartItem.price);
             } else {
                 $cartElem.remove();

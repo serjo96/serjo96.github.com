@@ -167,6 +167,7 @@
           </ul>
         </div>
     </footer>
+    
     <script id="catalog-template" type="text/template">
           <% _.each(goods, function(good) { %>
            <div class="item-catalogue">
@@ -179,21 +180,6 @@
                 </div>
               </div>
           </div>
-          <% }); %>
-    </script>
-    
-    <script id="catalog-six-template" type="text/template">
-          <% _.each(goods, function(good) { %>
-           <div class="item-catalogue">
-              <div class="image__cataloge"></div>
-              <div class="item-catalogue__info">
-                <div class="item-catalogue__item-name"><%- good.name %></div>
-                <div class="price_theme_item-catalogue"><span class="price__item"><%= good.price %></span> руб.</div>
-                <div class="item-catalogue__buy-button button--blue">
-                  <span class="buy-button js-add-to-cart" data-id="<%= good.id %>" data-name="<%- good.name %>" data-price="<%= good.price %>">В корзину</span>
-                </div>
-                </div>
-                </div>
           <% }); %>
     </script>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>

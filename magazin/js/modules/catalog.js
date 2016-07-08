@@ -32,7 +32,7 @@ var catalog = (function($) {
     }
     
     function _renders() {
-      var template = _.template($('#catalog-six-template').html()),
+      var template = _.template($('#catalog-template').html()),
           $goods = $('#js-load-catalogue');
 
       $.getJSON('data/six.json', function(data) {
