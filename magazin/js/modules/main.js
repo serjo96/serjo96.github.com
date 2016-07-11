@@ -6,10 +6,6 @@ $(document).ready(function() {
 });
 
 
-//$(document).on('click', '#js-more_items', function(){
-//  $("#js-load-catalogue").load("bloks.html");
-//});
-
 
 'use strict';
 
