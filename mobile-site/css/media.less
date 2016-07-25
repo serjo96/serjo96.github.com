@@ -90,8 +90,10 @@
     margin-bottom: 0;
   }
   .photo-grid__right-photo{
-    display: block;
     float: right;
+  }
+  .photo-grid__right-photo-adidas{
+    display: block;
   }
   .switches-pages__name{
     display: inline-block;
@@ -103,7 +105,7 @@
     }
   }
   .switches-pages__next-btn {
-    margin-left: 4px;
+    margin-left: 4px; 
   }
 }
 
@@ -111,26 +113,45 @@
     .wrapper {
       width: 700px;
     }
+    .page-name__text{
+      font-size: 40px;
+    }
     .page-name__line {
       width: 63.4%;
     }
     .photo-date{
+      padding: 27px 46px;
+      left: 20px;
+      top: 20px;
       &:after{
         display: block;
       }
     }
+    .photo-date__month {
+      font: 400 18px / 24px NotoSerif;
+    }
+    .photo-date__day {
+      font: 400 36px / 24px NotoSerif;
+    }
     .big-photo__disc{
       display: block;
+    }
+    .photo-grid{
+      margin: -20px;
     }
     .photo-grid__date {
       padding: 20px 0px;
     }
     .photo-grid__date, .photo-grid__img{
-      width: 22.3%;
+      width: 21.7%;
       margin: 20px;
       margin-right: 0;
       margin-bottom: 0;
+      &:after{
+        right: 23px;
+      }
     }
+    
     .photo-grid__right-photo{
       margin-top: 20px;
     }
