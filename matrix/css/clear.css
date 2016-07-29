@@ -1,47 +1,70 @@
-html,body,div,dl,dt,dd,ul,ol,li,form,table,tr,td,h1,h2,h3,h4,h5,h6,pre,p,span,b,i,a,input,textarea,
-fieldset {
-    margin: 0;
-    padding: 0;
-    outline: none;
-}
 *{
     box-sizing: border-box;
 }
-img{
-    max-width: 100%;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style-type: none;
 }
 :focus {
-    outline: 0;
+  outline: 0;
 }
-ul {
-    list-style-type: none;
+body {
+  line-height: 1;
+  color: black;
+  background: white;
 }
+ol, ul {
+  list-style: none;
+}
+
 li{
     list-style: none;
 }
-img,
-fieldset {
-    border: none;
-}
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
 }
 
+img{
+    max-width: 100%;
+}
 a {
-    text-decoration: none;
     color: inherit;
 }
+
 input[type="submit"] {
     cursor: pointer;
 }
-body,html{
-    height: 100%;
-    width: 100%;
-}
+
 .clearfix:after{
-    content: ".";
+    content: "";
     display: block;
     height: 0;
     clear: both;
