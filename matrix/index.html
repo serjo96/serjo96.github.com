@@ -5,6 +5,7 @@
   <title>Matrix</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="font/Segoe/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/font.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/clear.css">
 </head>
@@ -14,19 +15,19 @@
  <div class="left-side">
      <button class="umn">Умножить матрицы</button>
      <br>
-     <button class="clear-mtrx btn-style"><i class="fa fa-reply" aria-hidden="true"></i> Очистить матрицы</button>
-     <button class="change-mtrx btn-style"><i class="fa fa-exchange" aria-hidden="true"></i>Поменять матрицы местами</button>
+   <button class="clear-mtrx btn-style"><span class="icon arrow-return-ico"></span>Очистить матрицы</button>
+     <button class="change-mtrx btn-style"><span class="icon arrows-ico"></span>Поменять матрицы местами</button>
    <div class="add_mtrx">
      
       <span class="rad btn_a">
        <label for="matrix_a">
-         <input checked="checked" name="mtrx_sel" type="radio" value="matrix_a" id="check_mtrx_a">Матрица А
+         <input checked="checked" name="mtrx_sel" type="radio" value="matrix_a" class='radio-btn' id="check_mtrx_a">Матрица А
        </label>
      </span>
      
       <span class="rad btn_b">
        <label for="matrix_b">
-         <input type="radio" name="mtrx_sel" value="matrix_b" id="check_mtrx_b">Матрица В
+         <input type="radio" name="mtrx_sel" value="matrix_b" class='radio-btn' id="check_mtrx_b">Матрица В
        </label>
      </span>
      <br>

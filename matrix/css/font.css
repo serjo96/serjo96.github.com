@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'konturIconic';
+	src: url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.eot?')  format('eot'),
+	url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.woff') format('woff'),
+	url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.ttf') format('truetype'),
+	url('https://evrika.kontur.ru/WebForms/Static/C-Common/fonts/kontur-iconic-eco-webfont.svg') format('svg');
+	font-style: normal;
+}

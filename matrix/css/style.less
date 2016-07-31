@@ -3,7 +3,7 @@ body,html{
   height: 100%;
 }
 body{
-  font-family: 'SegoeUI-SemiBold';
+  font-family: "Segoe UI";
   font-size: 14px;
   color: #404040;
   line-height: 20px;
@@ -15,6 +15,35 @@ body{
   width: 984px;
   height: 100%;
 }
+.icon{
+  font-family: 'konturIconic' !important;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
+
+.arrows-ico{
+   margin-right: 5px;
+  &:before{
+    content: "\e01f";
+  }
+}
+
+.arrow-return-ico{
+  margin-right: 5px;
+  &:before{
+    content: '\e012';
+  }
+}
+.plus-ico {
+  &:before{
+    content: '\e00d';
+  }
+}
+
+
+
 .left-side {
   background-color: #bcbcbc;
   width: 333px;
@@ -33,15 +62,22 @@ body{
 }
 .error{
   background: #f6c1c0;
+  .btn-style, .radio-btn{
+    border: 1px solid #d1a4a3;
+  }
   >p{
     display: block;
     margin-top: 50px;
     color: #e04541;
+    font-weight: 500;
   }
 }
   
 .foc_blue{
   background: #5199db;
+  .btn-style, .radio-btn{
+    border: 1px solid #4582ba;
+  }
 }
   
 .umn {
@@ -87,7 +123,8 @@ body{
 }
   
 .btn-style{
-  font-family: 'SegoeUI-SemiBold';
+  font-family: "Segoe UI";
+  font-weight: 500;
   font-size: 14px;
   color: #404040;
   line-height: 20px;
@@ -198,12 +235,10 @@ body{
 .matrix_a_cover {
   display: inline-block;
   vertical-align: top;
-//  margin-left: 25px;
   position: relative;
 }
 
 .matrix_b_cover {
-//  margin-top: 50px;
   position: relative;
 }
   .str_inp{
