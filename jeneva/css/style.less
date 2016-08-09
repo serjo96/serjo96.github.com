@@ -1,0 +1,81 @@
+.header{
+  background-color: #22222a;
+  text-align: center;
+  position: relative;
+}
+
+.logo{
+  display: inline-block;
+}
+.logo__time {
+  color: #ffffff;
+  font: 300 22px / 23px 'helveticaneuecyrlight';
+  position: relative;
+  display: inline-block;
+  &:before{
+    content: '';
+    width: 17px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -18px;
+  }
+  &:after{
+    content: '';
+    width: 17px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -21px;
+  }
+}
+.logo__main-name {
+  color: #c0a062;
+  font: 700 100px 'Palatino Linotype';
+  text-transform: uppercase;
+  line-height: 81px;
+}
+.logo__disc-logo{
+  color: #ffffff;
+  font: 300 22px / 23px 'helveticaneuecyrlight';
+  line-height: 50px;
+}
+
+.lk{
+  position: absolute;
+  right: 202px;
+  bottom: 35px;
+}
+.lk__link {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.lk-icon {
+	width: 40px;
+	height: 40px;
+    border-radius: 50%;
+    border:1px solid #c0a062;
+	position: relative;
+    display: inline-block;
+}
+.lk-enter {
+}
+.lk-icon__img {
+	width: 21px;
+    height: 27px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+.lk-ico-text {
+  color: #e2e2e2;
+  font: 300 15px 'helveticaneuecyrlight';
+}
