@@ -186,9 +186,9 @@
   text-transform: uppercase;
   margin-right: 52px;
   &:hover{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color=#000000)";
-    text-shadow: 2px 2px 5px #000000;
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color=#000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000)";/*IE 8*/
+    text-shadow: 2px 2px 6px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
   }
   &:last-child{
     margin-right: 0;
@@ -363,7 +363,6 @@
   filter: grayscale(1) brightness(200%) hue-rotate(360deg);
   &:hover{
     background: #c0a062;
-    filter: none;
   }
 }
 .oncart-button-img{
