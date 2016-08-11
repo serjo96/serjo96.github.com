@@ -185,6 +185,11 @@
   font: 300 15px 'HelveticaNeueCyr-Light';
   text-transform: uppercase;
   margin-right: 52px;
+  &:hover{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color=#000000)";
+    text-shadow: 2px 2px 5px #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color=#000000);
+  }
   &:last-child{
     margin-right: 0;
   }
@@ -247,10 +252,13 @@
   font: 400 80px 'proxima_nova_rgregular', sans-serif;
 }
 .header-section__second-text {
-  color: #c0a062;
-  font: 300 19px 'proxima_nova_ltlight';
+  font: 300 19px 'proxima_nova_ltlight', sans-serif;
   text-transform: uppercase;
 }
+.gold-text {
+  color: #c0a062;
+}
+
 .model-list{
 //  margin: 0 20px;
   margin-top: 110px;
@@ -353,6 +361,10 @@
   -moz-filter: grayscale(1) brightness(200%) hue-rotate(360deg);
   -o-filter: grayscale(1) brightness(200%) hue-rotate(360deg);
   filter: grayscale(1) brightness(200%) hue-rotate(360deg);
+  &:hover{
+    background: #c0a062;
+    filter: none;
+  }
 }
 .oncart-button-img{
   display: inline-block;
@@ -397,8 +409,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 5px 400px rgba(0,0,0,.61);
-  transition: all 600ms ease;
+  box-shadow: inset 0 0 150px 400px rgba(0,0,0,.61);
+  transition: all 700ms ease;
   width: 100%;
   height: 100%;
   &:hover{
@@ -409,6 +421,7 @@
 .grid-category__img{
   img{
     display: block;
+    width: 100%;
   }
 }
 
@@ -417,18 +430,24 @@
 }
 .one-right-categor {
 	float: left;
+    margin-left: 25px;
 }
 .vertical-long{
   margin-bottom: 17px;
 }
 .two-min-block {
-  width: 47.9%;
-  margin-right: 33px;
+  width: 49.3%;
+  margin-right: 15px;
   img{
     height: 471px;
   }
   &:last-child{
     margin-right: 0;
+  }
+}
+.gloves {
+  img{
+    height: 943px;
   }
 }
 .link-category {
@@ -445,6 +464,10 @@
   font: 300 40px 'proxima_nova_ltlight', sans-serif;
 }
 
+.stock-header-text {
+  color: #34343f;
+  font: 300 18px 'HelveticaNeueCyr-Light', sans-serif;
+}
 
 
 
