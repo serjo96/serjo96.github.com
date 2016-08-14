@@ -1,32 +1,21 @@
 .header{
-  background-color: #22222a;
   text-align: center;
+}
+.header-bg {
+  background-color: #22222a;
   position: relative;
+	
 }
 //wrappers
-.header-wrapper{
-  max-width: 447px;
-  margin: 0 auto;
-  position: relative;
-}
 
-.wrapper-nav {
-  max-width: 1106px;
-  margin: 0 auto;
-}
 
-.offer-wrapper{
-  max-width: 909px;
-  margin: 0 auto;
-}
+
+
 .main-cont{
-  max-width: 1763px;
+  max-width: 843px;
   margin: 0 auto;
 }
-.item-wrapper{
-  max-width: 1346px;
-  margin: 0 auto;
-}
+
 .footer-wrapper {
 	max-width: 720px;
     margin: 0 auto;
@@ -44,11 +33,11 @@
 .logo{
   display: inline-block;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 12px;
 }
 .logo__time {
   color: #ffffff;
-  font: 300 22px / 23px 'HelveticaNeueCyr-Light';
+  font: 300 18px / 23px 'HelveticaNeueCyr-Light';
   position: relative;
   display: inline-block;
   &:before{
@@ -72,20 +61,19 @@
 }
 .logo__main-name {
   color: #c0a062;
-  font: 700 100px 'Palatino Linotype';
+  font: 700 60px 'Palatino Linotype';
   text-transform: uppercase;
-  line-height: 81px;
+  line-height: 57px;
 }
 .logo__disc-logo{
   color: #ffffff;
-  font: 300 22px / 23px 'HelveticaNeueCyr-Light';
-  line-height: 50px;
+  font: 300 18px / 23px 'HelveticaNeueCyr-Light';
+  text-transform: uppercase;
+  line-height: 45px;
 }
 
 .lk{
-  position: absolute;
-  right: 202px;
-  bottom: 35px;
+ float: right;
 }
 .lk__link {
     display: inline-block;
@@ -102,7 +90,7 @@
 	height: 40px;
     border-radius: 50%;
     border:1px solid #c0a062;
-	position: relative;
+    position: relative;
     display: inline-block;
 }
 .lk-enter {
@@ -124,7 +112,7 @@
 .nav{
   background: #fff;
   vertical-align: middle;
-  line-height: 70px;
+  line-height: 50px;
   position: relative;
   text-align: center;
 }
@@ -146,13 +134,12 @@
   font: 300 12px 'HelveticaNeueCyr-Light';
   text-align: center;
   color: #22222a;
-  margin: 20px 0;
 }
 
 
 
 .offer-block {
-	padding: 226px 0 249px 0;
+	padding: 173px 0 178px 0;
 }
 
 .special-offer{
@@ -161,8 +148,8 @@
 }
 .special-offer__text{
   color: #ffffff;
-  font: 400 91px 'proxima_nova_rgregular', sans-serif;
-  margin-bottom: 100px;
+  font: 400 60px 'proxima_nova_rgregular', sans-serif;
+  margin-bottom: 94px;
 }
 .button{
   background-color: #f6f6f6;
@@ -171,24 +158,22 @@
 }
 .chose-btn{
   color: #22222a;
-  font: 300 28px 'HelveticaNeueCyr-Light';
-  line-height: 68px;
+  font: 300 18px 'HelveticaNeueCyr-Light';
+  line-height: 37px;
   display: inline-block;
-  padding: 0 83px;
+  padding: 0 34px;
 }
 .top-nav{
   display: inline-block;
 }
 .top-nav__link{
   display: inline-block;
-  color: #22222a;
-  font: 300 15px 'HelveticaNeueCyr-Light';
+  color: #777;
+  font: 300 12px 'HelveticaNeueCyr-Light';
   text-transform: uppercase;
-  margin-right: 52px;
-  &:hover{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000)";/*IE 8*/
-    text-shadow: 2px 2px 6px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
+  margin-right: 20px;
+ &:hover{
+      color: #222;
   }
   &:last-child{
     margin-right: 0;
@@ -222,8 +207,8 @@
   }
 }
 .search-fild{
-  width: 150px;
-  height: 30px;
+  width: 94px;
+  height: 25px;
   padding: 0 15px;
   line-height: 32px;
   text-align: center;
@@ -237,22 +222,23 @@
   border-radius: 3px;
   background: transparent;
   
-  &:focus{
-    width: 300px;
-    color: #22222a;
-  }
+//  &:focus{
+//    width: 300px;
+//    color: #22222a;
+//  }
 }
 
 .header-section{
   text-align: center;
+  margin-top: 30px;
 }
 
 .header-section__text{
   color: #22222a;
-  font: 400 80px 'proxima_nova_rgregular', sans-serif;
+  font: 400 48px 'proxima_nova_rgregular', sans-serif;
 }
 .header-section__second-text {
-  font: 300 19px 'proxima_nova_ltlight', sans-serif;
+  font: 300 15px 'proxima_nova_ltlight', sans-serif;
   text-transform: uppercase;
 }
 .gold-text {
@@ -270,21 +256,26 @@
   float: left;
   text-align: center;
 }
+.model-item__img{
+  width: 58%;
+  margin: 0 auto;
+}
 .model-item__name{
   color: #22222a;
-  font: 300 50px / 45px 'HelveticaNeueCyr-Light';
+  font: 300 22px / 19px 'HelveticaNeueCyr-Light';
+  
 }
 .model-item__size {
   color: #7d7d7d;
-  font: 300 28px / 45px 'HelveticaNeueCyr-Light';
+  font: 300 12px / 19px 'HelveticaNeueCyr-Light';
 }
 .model-item__price{
 
 }
 
 .price-row {
-	 color: #39393f;
-  font: 300 45px 'OpenSans', sans-serif;
+  color: #39393f;
+  font: 300 18px 'OpenSans', sans-serif;
   vertical-align: top;
   display: inline-block;
 }
@@ -292,10 +283,10 @@
 .model-item__link{
   position: relative;
   display: inline-block;
-  width: 43px;
-  height: 43px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  border:1px solid #c0a062;
+  border:2px solid #c0a062;
   cursor: pointer;
     -ms-filter: grayscale(1);
     -webkit-filter: grayscale(1);
@@ -306,7 +297,9 @@
     filter: none;
   }
   >img{
-    margin-top: -15px;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -327,12 +320,12 @@
 
 .item-name {
   color: #ffffff;
-  font: 400 109px 'proxima_nova_rgregular', sans-serif;
+  font: 400 60px 'proxima_nova_rgregular', sans-serif;
 }
 .item-advantages__adv{
   float: left;
   color: #ffffff;
-  font: 300 32px 'proxima_nova_ltlight';
+  font: 300 22px 'proxima_nova_ltlight';
   margin-left: 5px;
   &:last-child{
     margin-left: 0;
@@ -346,7 +339,7 @@
 }
 .buy-price {
   color: #ffffff;
-  font: 55px 'PTSans', sans-serif;
+  font: 60px 'PTSans', sans-serif;
   display: inline-block;
   margin-right: 20px;
 }
@@ -354,7 +347,7 @@
 	border: 1px solid #fff;
     border-radius: 40px;
     line-height: 67px;
-    padding: 0 39px 0 28px;
+    padding: 0 17px;
     display: inline-block;
   &:hover{
     background: #c0a062;
@@ -375,7 +368,7 @@
   display: inline-block;
   margin-left: 18px;
   color: #ffffff;
-  font: 300 25px 'HelveticaNeueCyr-Light';
+  font: 300 18px 'HelveticaNeueCyr-Light';
 }
 
 .accessories-section {
@@ -423,7 +416,9 @@
     width: 100%;
   }
 }
-
+.bugs-cat {
+  width: 57.45%;
+}
 .three-categor {
 	float: left;
 }
