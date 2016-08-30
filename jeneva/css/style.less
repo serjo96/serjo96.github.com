@@ -34,6 +34,8 @@
   display: inline-block;
   text-align: center;
   margin-top: 12px;
+  margin-right: 30px;
+  margin-left: 82px;
 }
 .logo__time {
   color: #ffffff;
@@ -73,7 +75,7 @@
 }
 
 .lk{
- float: right;
+  display: inline-block;
 }
 .lk__link {
     display: inline-block;
@@ -118,15 +120,29 @@
 }
 
 .select-city {
-  float: left;
+  display: inline-block;
   width: 150px;
-  height: 30px;
-  select{
-    border: none;
-    cursor: pointer;
-    background: transparent;
+  border: 1px solid #c0a062;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.select-city__name{
+  color: #ffffff;
+  font: 300 12px 'HelveticaNeueCyr-Light';
+  line-height: 30px;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    right: 19px;
+    top: 13px;
+    background: url(img/down-arrow.png);
+    width: 8px;
+    height: 8px;
   }
 }
+
 .button-grey{
   cursor: pointer;
   background: #d3d3d3;
@@ -139,7 +155,7 @@
 
 
 .offer-block {
-	padding: 173px 0 178px 0;
+	padding: 161px 0 177px 0;
 }
 
 .special-offer{
@@ -148,8 +164,9 @@
 }
 .special-offer__text{
   color: #ffffff;
+  line-height: 60px;
   font: 400 60px 'proxima_nova_rgregular', sans-serif;
-  margin-bottom: 94px;
+  margin-bottom: 90px;
 }
 .button{
   background-color: #f6f6f6;
@@ -169,7 +186,7 @@
 .top-nav__link{
   display: inline-block;
   color: #777;
-  font: 300 12px 'HelveticaNeueCyr-Light';
+  font: 600 12px 'HelveticaNeueCyr-Light';
   text-transform: uppercase;
   margin-right: 20px;
  &:hover{
@@ -257,8 +274,7 @@
   text-align: center;
 }
 .model-item__img{
-  width: 58%;
-  margin: 0 auto;
+  padding: 0 43px;
 }
 .model-item__name{
   color: #22222a;
@@ -286,7 +302,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border:2px solid #c0a062;
+  border:1px solid #c0a062;
   cursor: pointer;
     -ms-filter: grayscale(1);
     -webkit-filter: grayscale(1);
@@ -308,14 +324,13 @@
   padding: 61px 0;
 }
 .model-item-section__img{
-  display: inline-block;
-  vertical-align: top;
+  width: 23.6%;
+  float: left;
 }
 
 .mode-item-section__discr{
-  margin-left: 240px;
-  display: inline-block;
-  vertical-align: top;
+  margin-left: 92px;
+  float:    left;
 }
 
 .item-name {
@@ -332,7 +347,7 @@
   }
 }
 .buy-price-button{
-  margin-top: 180px;
+  margin-top: 51px;
   >div{
     vertical-align: bottom;
   }
@@ -346,7 +361,7 @@
 .on-cart-button {
 	border: 1px solid #fff;
     border-radius: 40px;
-    line-height: 67px;
+    line-height: 37px;
     padding: 0 17px;
     display: inline-block;
   &:hover{
@@ -361,8 +376,10 @@
   filter: grayscale(1) brightness(200%) hue-rotate(360deg);
   display: inline-block;
   width: 26px;
-  height: 60px;
   vertical-align: middle;
+  img{
+    display: block;
+  }
 }
 .on-cart-button__text {
   display: inline-block;
@@ -417,7 +434,8 @@
   }
 }
 .bugs-cat {
-  width: 57.45%;
+  width: 57.25%;
+  margin-bottom: 20px;
 }
 .three-categor {
 	float: left;
@@ -430,18 +448,19 @@
   margin-bottom: 17px;
 }
 .two-min-block {
-  width: 49.3%;
-  margin-right: 15px;
+  width: 27.6%;
+  margin-right: 17px;
+
   img{
-    height: 471px;
   }
   &:last-child{
     margin-right: 0;
   }
 }
 .gloves {
+  width: 40.3%;
+  float: right;
   img{
-    height: 943px;
   }
 }
 .link-category {
@@ -451,7 +470,6 @@
   right: 0;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.54);
-  width: 428px;
   line-height: 67px;
   text-align: center;
   color: #22222a;
