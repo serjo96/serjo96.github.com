@@ -206,7 +206,10 @@
 }
 
 .search-btn{
-  display: inline-block;
+  position: absolute;
+  top: 14px;
+  right: 0;
+  transition: all .2s ease-in-out;
   ::-webkit-input-placeholder {
     color:#22222a;
     font: 300 12px 'HelveticaNeueCyr-Light';
@@ -236,10 +239,6 @@
   text-align: center;
   color: #22222a;
   font: 300 12px 'HelveticaNeueCyr-Light';
-  -moz-transition: all .2s ease-out;
-  -webkit-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;  
   border: none;
   border-radius: 3px;
   background: transparent;
@@ -250,14 +249,12 @@
   }
 }
 .focus-fild{
-  position: absolute;
-  top: 14px;
-  right: 0;
+ 
   width: 100%;
 }
 .header-section{
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .header-section__text{
   color: #22222a;
@@ -292,7 +289,7 @@
 }
 .model-item__size {
   color: #7d7d7d;
-  font: 300 12px / 19px 'HelveticaNeueCyr-Light';
+  font: 300 12px / 21px 'HelveticaNeueCyr-Light';
 }
 .model-item__price{
 
@@ -330,7 +327,7 @@
 
 .model-item-section {
   background-color: #22222a;
-  padding: 61px 0;
+  padding: 40px 0;
 }
 .model-item-section__img{
   width: 23.6%;
@@ -338,8 +335,9 @@
 }
 
 .mode-item-section__discr{
+  margin-top: 40px;
   margin-left: 92px;
-  float:    left;
+  float: left;
 }
 
 .item-name {
@@ -356,7 +354,6 @@
   }
 }
 .buy-price-button{
-  margin-top: 51px;
   >div{
     vertical-align: bottom;
   }
@@ -366,13 +363,14 @@
   font: 400 60px 'proxima_nova_rgregular', sans-serif;
   display: inline-block;
   margin-right: 20px;
-  line-height: 61px;
+  line-height: 111px;
 }
 .on-cart-button {
 	border: 1px solid #fff;
     border-radius: 40px;
     line-height: 37px;
     padding: 0 17px;
+    padding-right: 13px;
     display: inline-block;
   &:hover{
     background: #c0a062;
@@ -385,7 +383,8 @@
   -o-filter: grayscale(1) brightness(200%) hue-rotate(360deg);
   filter: grayscale(1) brightness(200%) hue-rotate(360deg);
   display: inline-block;
-  width: 26px;
+  width: 16px;
+  height: 20px;
   vertical-align: middle;
   img{
     display: block;
@@ -483,7 +482,7 @@
   line-height: 67px;
   text-align: center;
   color: #22222a;
-  font: 300 40px 'proxima_nova_ltlight', sans-serif;
+  font: 300 22px 'proxima_nova_ltlight', sans-serif;
 }
 
 .stock-header-text {
