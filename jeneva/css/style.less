@@ -108,7 +108,7 @@
 }
 .lk-ico-text {
   color: #e2e2e2;
-  font: 300 15px 'HelveticaNeueCyr-Light';
+  font: 300 12px 'HelveticaNeueCyr-Light';
 }
 .nav{
   background: #fff;
@@ -116,6 +116,9 @@
   line-height: 50px;
   position: relative;
   text-align: center;
+  .main-cont {
+    position: relative;	
+  }
 }
 
 .select-city {
@@ -183,7 +186,7 @@
   padding: 0 34px;
 }
 .top-nav{
-  display: inline-block;
+  float: left;
 }
 .top-nav__link{
   display: inline-block;
@@ -241,17 +244,21 @@
   border-radius: 3px;
   background: transparent;
   
-//  &:focus{
-//    width: 300px;
-//    color: #22222a;
-//  }
+  &:focus{
+    width: 100%;
+    color: #22222a;
+  }
 }
-
+.focus-fild{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100%;
+}
 .header-section{
   text-align: center;
   margin-top: 30px;
 }
-
 .header-section__text{
   color: #22222a;
   font: 400 48px 'proxima_nova_rgregular', sans-serif;
@@ -356,9 +363,10 @@
 }
 .buy-price {
   color: #ffffff;
-  font: 60px 'PTSans', sans-serif;
+  font: 400 60px 'proxima_nova_rgregular', sans-serif;
   display: inline-block;
   margin-right: 20px;
+  line-height: 61px;
 }
 .on-cart-button {
 	border: 1px solid #fff;
