@@ -149,8 +149,7 @@
 }
 
 .button-grey{
-  cursor: pointer;
-  background: #d3d3d3;
+//  background: #d3d3d3;
   border-radius: 25px;
   font: 300 12px 'HelveticaNeueCyr-Light';
   text-align: center;
@@ -207,9 +206,10 @@
 
 .search-btn{
   position: absolute;
-  top: 14px;
+  top: 0;
   right: 0;
-  transition: all .2s ease-in-out;
+  
+  display: inline-block;
   ::-webkit-input-placeholder {
     color:#22222a;
     font: 300 12px 'HelveticaNeueCyr-Light';
@@ -235,15 +235,15 @@
   width: 94px;
   height: 25px;
   padding: 0 15px;
-  line-height: 32px;
   text-align: center;
   color: #22222a;
   font: 300 12px 'HelveticaNeueCyr-Light';
   border: none;
   border-radius: 3px;
   background: transparent;
-  background: url(../img/search.png) no-repeat;
+  background: url(../img/search.png)no-repeat, #d3d3d3 ;
   background-position: 15px;
+  transition: all .2s ease-in-out;
   &:focus{
     width: 100%;
     color: #22222a;
