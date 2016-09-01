@@ -13,6 +13,52 @@
 
 
 @font-face {
+  font-family: 'helveticaneuecyrblack';
+  src: url('../fonts/havel/helveticaneuecyr-black-webfont.eot');
+  src: url('../fonts/havel/helveticaneuecyr-black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/havel/helveticaneuecyr-black-webfont.woff2') format('woff2'),
+       url('../fonts/havel/helveticaneuecyr-black-webfont.woff') format('woff'),
+       url('../fonts/havel/helveticaneuecyr-black-webfont.ttf') format('truetype'),
+       url('../fonts/havel/helveticaneuecyr-black-webfont.svg#helveticaneuecyrblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'helveticaneuecyrbold';
+  src: url('../fonts/havel/helveticaneuecyr-bold-webfont.eot');
+  src: url('../fonts/havel/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/havel/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+    url('../fonts/havel/helveticaneuecyr-bold-webfont.woff') format('woff'),
+    url('../fonts/havel/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+    url('../fonts/havel/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'helveticaneuecyrmedium';
+  src: url('../fonts/havel/helveticaneuecyr-medium-webfont.eot');
+  src: url('../fonts/havel/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/havel/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+    url('../fonts/havel/helveticaneuecyr-medium-webfont.woff') format('woff'),
+    url('../fonts/havel/helveticaneuecyr-medium-webfont.ttf') format('truetype'),
+    url('../fonts/havel/helveticaneuecyr-medium-webfont.svg#helveticaneuecyrmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
   font-family: 'PalatinoLinotype-BoldItalic';
   src: url('../fonts/platino/PalatinoLinotype-BoldItalic.eot?#iefix') format('embedded-opentype'), 
        url('../fonts/platino/PalatinoLinotype-BoldItalic.woff') format('woff'),
