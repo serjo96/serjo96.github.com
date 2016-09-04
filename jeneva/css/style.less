@@ -675,6 +675,11 @@
   width: 178px;
   height: 26px; 
   float: right;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=28, Direction=0, Color=#000000)";/*IE 8*/
+  -moz-box-shadow: 0 0 28px -3px rgba(0,0,0,0.1) inset;/*FF 3.5+*/
+  -webkit-box-shadow: 0 0 28px -3px rgba(0,0,0,0.1) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 0 0 28px -3px rgba(0,0,0,0.1) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=28, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 .adress-textarea {
 	height: 65px;
@@ -700,7 +705,7 @@
 }
 .favorite-list{
   float: left;
-  width: 76.3%;
+  width: 75.3%;
 }
 .model-item-favorite{
   width: 24.8%;
@@ -785,4 +790,93 @@
     right: 20px;
     top: 25px;
   }
+}
+
+.about-cont {
+	text-align: center;
+    margin-top: 40px;
+    margin-bottom: 72px;
+}
+.about_img{
+  color: #34343f;
+  font: 400 24px 'proxima_nova_ltlight', sans-serif;
+  width: 20.56%;
+
+  display: inline-block;
+  margin-left: 112px;
+  text-align: center;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
+.about-text {
+  color: #34343f;
+  font: 400 24px 'proxima_nova_ltlight', sans-serif;
+  margin-top: 71px;
+  margin-bottom: 64px;
+}
+
+.services-cont {
+	margin-top: 72px;
+    margin-bottom: 36px;
+    word-spacing: -.36em;
+    text-align: center;
+}
+.service-item {
+	text-align: center;
+    display: inline-block;
+    width: 25.63%;
+    margin-bottom: 26px;
+    word-spacing: normal;
+  &:nth-child(2){
+    margin: 0 97px;
+  }
+  &:nth-child(5){
+    margin: 0 97px;
+  }
+}
+.services-item__name {
+  color: #34343f;
+  font: 400 24px 'proxima_nova_ltlight', sans-serif;
+  line-height: 62px;
+}
+.services-item__order-btn--cover {
+	text-align: center;
+}
+.order-btn{
+    display: inline-block;
+    background: #22222a;
+    border-radius: 25px;
+    padding: 8px 24px;
+    color: #ffffff;
+    font: 300 16px 'helveticaneuecyrmedium',sans-serif;
+}
+
+.search-cont {
+	margin-top: 28px;
+    margin-bottom: 11px;
+}
+.search__fild--cover{
+  width: 74%;
+  text-align: center;
+  margin: 0 auto;
+}
+.search__fild{
+  background-color: #ffffff;
+  border:1px solid #d0d0d0;
+  width: 100%;
+  border-radius: 5px;
+  color: #34343f;
+  font: 400 22px 'proxima_nova_ltlight', sans-serif;
+  padding-left: 12px;
+  line-height: 29px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=28, Direction=0, Color=#000000)";/*IE 8*/
+  -moz-box-shadow: 0 0 28px -3px rgba(0,0,0,0.1) inset;/*FF 3.5+*/
+  -webkit-box-shadow: 0 0 28px -3px rgba(0,0,0,0.1) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 0 0 28px -3px rgba(0,0,0,0.1) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=28, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+.search-result{
+  margin-top: 53px;
 }
