@@ -427,15 +427,17 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  
 }
 
 
 .category-shadow{
-  position: absolute;
+//  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  padding-bottom: 27px;
   box-shadow: inset 0 0 150px 400px rgba(0,0,0,.61);
   transition: all 700ms ease;
   width: 100%;
@@ -458,8 +460,33 @@
 }
 
 .bugs-cat {
-  width: 61.25%;
+  width: 57.2%;
   margin-bottom: 20px;
+  
+  .category-shadow{
+    padding-bottom: 24px;
+    padding-top: 36.4%;
+  }
+}
+ 
+.gloves {
+  width: 40.3%;
+  float: right;
+  
+  background-size: cover;
+  .category-shadow{
+    padding-top: 140%;
+  }
+}
+
+.purse {
+  
+  background-size: cover;
+}
+
+.belts {
+  width: 30.3%;
+  
 }
 
 .three-categor {
@@ -473,26 +500,19 @@
   margin-bottom: 17px;
 }
 .two-min-block {
-  width: 29.6%;
-  margin-right: 11px;
-
+  width: 27.3%;
+  margin-right: 21px;
+    .category-shadow {
+      padding-top: 100%;
+    }
   img{
   }
   &:last-child{
     margin-right: 0;
   }
 }
-.gloves {
-  width: 37.7%;
-  float: right;
-  img{
-  }
-}
-.belts {
-  width: 30.3%;
-}
 .link-category {
-  position: absolute;
+//  position: absolute;
   bottom: 30px;
   left: 0;
   right: 0;
