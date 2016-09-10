@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'FontinSans';
+  src: url('../fonts/FontinSans_Cyrillic_SC_46b.eot');
+  src: url('../fonts/FontinSans_Cyrillic_SC_46b.eot') format('embedded-opentype'),
+       url('../fonts/FontinSans_Cyrillic_SC_46b.woff2') format('woff2'),
+       url('../fonts/FontinSans_Cyrillic_SC_46b.woff') format('woff'),
+       url('../fonts/FontinSans_Cyrillic_SC_46b.ttf') format('truetype'),
+       url('../fonts/FontinSans_Cyrillic_SC_46b.svg#FontinSans_Cyrillic_SC_46b') format('svg');
+}
