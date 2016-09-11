@@ -7,9 +7,17 @@ body{
 }
 .main-cover {
 	min-width: 1021px;
+  height: 100%;
 }
 .content-page {
-	margin-left: 280px;
+	display: inline-block;
+  vertical-align: top;
+  margin-left: 240px;
+  width: 684px;
+  margin-top: 14px;
+}
+.content {
+	height: 100%;
 }
 .header-main{
   background: url(../img/header.png) no-repeat;
@@ -73,26 +81,40 @@ body{
     color: #ffffff;
     font-size: 18px;
 }
+.header{
+  
+}
 .main-nav{
   background: url(../img/nav.png) no-repeat;
   background-size: 100% 100%;
+  height: 100%;
   width: 258px;
-  height: calc(~'100vh - 136px');
-  position: fixed;
-  left: 0;
+  padding: 0 40px;
+  padding-top: 18px;
+  display: inline-block;
 }
 .footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-.footer-cover{
   background: url(../img/header.png) no-repeat;
   background-size: cover;
+  padding-top: 20px;
 }
-.social-item {
+.footer-cover{
+  width: 930px;
+  margin: 0 auto;
+  text-align: center;
+    letter-spacing : -.36em;
+    font-size : 0;
+  >div{
+    vertical-align: top;
+  }
+}
+.f-social{
+  width: 155px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: normal;
+}
+.social__item {
 	width: 31px;
     height: 31px;
     float: left;
@@ -101,4 +123,40 @@ body{
   &:first-child{
     margin-left: 0;
   }
+}
+
+.title-page {
+  color: #22222a;
+  font: 36px 'FontinSans' , sans-serif;
+  text-align: center;
+}
+
+.about-item{
+  color: #22222a;
+  font: 18px / 26px 'FontinSans' , sans-serif;
+  list-style: disc;
+}
+
+.title-f-item {
+  color: #ffffff;
+  font: 18px 'FontinSans' , sans-serif;
+}
+
+.f-contacts-about {
+	display: inline-block;
+    text-align: center;
+    width: 119px;
+    margin: 0 268px;
+  letter-spacing: normal;
+}
+.f-contacts__item {
+  color: #ffffff;
+  font: 14px 'FontinSans' , sans-serif;
+}
+
+.f-contacts {
+  display: inline-block;
+  text-align: center;
+  width: 119px;
+  letter-spacing: normal;
 }
