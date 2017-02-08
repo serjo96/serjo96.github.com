@@ -44,8 +44,8 @@ function returnFnResult(fn) {
  При вызове F, переданное число должно быть увеличено на единицу и возвращено из F
  */
 function returnCounter(number) {
-var count = number || 0;
-  return function(){
+	var count = number || 0;
+	return function(){
     return ++count
   }
 }
@@ -60,7 +60,7 @@ var count = number || 0;
 function bindFunction(fn) {
 var f = fn.bind(function f(){return 10 + 5},10,25)
 
-	return bindFunction(fn);
+	return fn.bind(this, arguments[1], arguments[2]);
 }
 
 
